@@ -90,9 +90,9 @@
     background: var(--mainbg-color);
   }
   header {
-    border-bottom: 1px dotted;
-    height: 240px;
-    background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/hubble_ngc6652_potw2331a_sm.jpg");
+    border-bottom: 1px solid;
+    height: 1px;
+    background-image: 
     background-position: center;
   }
   header h1 {
