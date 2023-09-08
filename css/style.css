@@ -1,0 +1,198 @@
+:root {
+    --text-color: #000000;
+    --bg-color: #ffffff;
+    --mainbg-color: #fefefe;
+    --border-color: #014b69;
+    --accent-color: #effaff;
+    
+  }
+  
+  body {
+    background: var(--bg-color);
+    background-image: url;
+    background-attachment: fixed;
+    color: var(--text-color);
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 5px;
+    font-family: verdana;
+    font-size: 0.8rem;
+    scrollbar-color: var(--bg-color) var(--mainbg-color);
+    scrollbar-width: thin;
+  }
+  .container {
+    position: fixed;
+    width: 100%;
+    min-height: 100%;
+    left: 0;
+    top: 0;
+    background-image: url;*/
+    background-size: 100% 200%;
+    background-position: top;
+    opacity: 0.25;
+    filter: saturate(2);
+    z-index: -1;
+  }
+  
+  ::selection {
+    background: var(--accent-color);
+  }
+  
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  a:hover {
+    text-shadow: 1px 1px 10px var(--link-color);
+    letter-spacing: 2px;
+  }
+  
+  hr {
+    border: none;
+    border-bottom: 1px dotted var(--border-color);
+    margin: 0 15px;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    padding: 0;
+    margin: 0;
+    font-family: times new roman;
+    font-size: 1.2rem;
+    font-style: italic;
+    letter-spacing: 1px;
+  }
+  h1 {
+    text-shadow: 1px 1px 5px var(--link-color);
+    text-align: center;
+    padding: 3px;
+    text-transform: uppercase;
+  }
+  h2 {
+    text-shadow: 1px 1px 5px var(--link-color);
+  }
+  h3 {
+    border-bottom: 1px solid;
+    margin-right: 15px;
+  }
+  
+  header,
+  nav,
+  main,
+  footer {
+    border: 1px solid var(--border-color);
+    padding: 5px 20px;
+    background: var(--mainbg-color);
+  }
+  header {
+    border-bottom: 1px dotted;
+    height: 240px;
+    background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/hubble_ngc6652_potw2331a_sm.jpg");
+    background-position: center;
+  }
+  header h1 {
+    margin: 15px;
+    font-family: times new roman;
+    font-size: 1.8rem;
+    font-style: italic;
+    text-align: right;
+    vertical-align: text-bottom;
+    background: none;
+    text-transform: none;
+  }
+  
+  footer {
+    text-shadow: 1px 1px 10px var(--link-color);
+    background: none;
+    border: none;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  nav {
+    padding: 0;
+    border: none;
+    flex-display: wrap;
+    width: 25%;
+    border-right: 1px solid var(--border-color);
+    height: auto;
+  }
+  nav li,
+  nav ul {
+    padding: 2px;
+    margin: 0;
+    list-style-type: none;
+  }
+  nav a {
+    color: var(--link-color);
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 10px var(--link-color);
+    font-family: times new roman;
+    font-size: 1.2rem;
+    font-style: italic;
+    padding: 0 10px;
+    font-weight: normal;
+  }
+  
+  nav li:hover {
+    background: var(--accent-color);
+  }
+  nav h1 {
+    padding: 3px 10px;
+    margin: 0;
+    background: var(--bg-color);
+    color: var(--mainbg-color);
+    text-transform: uppercase;
+    text-align: left;
+  }
+  
+  main {
+    text-align: left;
+    border-top: none;
+    display: flex;
+    padding: 0;
+  }
+  
+  section {
+    height: 500px;
+    overflow: auto;
+    width: 100%;
+    margin: 15px;
+  }
+  
+  @media screen and (max-aspect-ratio: 16/9) {
+    body {
+      margin: auto;
+      padding:15px;
+    }
+    header {
+      height: 100px;
+    }
+    main {
+      display: block;
+    }
+  
+    nav {
+      width: 100%;
+      border-left: none;
+      border-bottom: 1px solid var(--border-color);
+    }
+  
+    nav ul {
+      display: flex;
+      list-style-type: none;
+    }
+  
+    section {
+      width: 95%;
+      height:auto;
+      padding:15px;
+      margin:15px auto;
+    }
+  }
+  
