@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title> data gallery </title>
+             <style type="text/css">* {cursor: url(https://cur.cursors-4u.net/nature/nat-1/nat79.cur), auto !important;}</style>
+             <a href="https://www.cursors-4u.com/cursor/2005/12/21/nat79.html" target="_blank" title="Rubber Ducky">
+            <img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Rubber Ducky" style="position:absolute; top: 0px; right: 0px;" /></a><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Snowball 2" style="position:absolute; top: 0px; right: 0px;" /></a>
+
+            <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+            <link rel="manifest" href="/site.webmanifest">
+            <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+            <meta name="msapplication-TileColor" content="#da532c">
+            <meta name="theme-color" content="#ffffff">
+            
+            
+            <link rel="stylesheet" href="/css/style.css">
+            <body onload="startTime()">
+                
+                <div id="txt"></div>
+                
+                <script>
+                function startTime() {
+                  const today = new Date();
+                  let h = today.getHours();
+                  let m = today.getMinutes();
+                  let s = today.getSeconds();
+                  m = checkTime(m);
+                  s = checkTime(s);
+                  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+                  setTimeout(startTime, 1000);
+                }
+                
+                function checkTime(i) {
+                  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                  return i;
+                }
+                </script>
+        
+        </head>
+        
+        <body>
+        <a target="myFrame"
+          <li> <a href="/index.html">homepage - </a></li>
+          <a href="/research/index.html"> research - </a>
+          </a>
+          <a href="/projects/index.html"> projects - </a>
+          </a>
+          <a href="/data gallery/index.html"> data gallery - </a>
+          </a>
+          <a href="/about me/index.html">about me</a></li>
+          </a>
+          <br></br>
+          <!--HEADER-->
+          <header>
+            
+          </header>
+        
+          <!--MAIN-->
+          <main>
+        
+            <!--NAVIGATION-->
+            <nav>
+              <h2 style="color:black;">welcome!</h2>
+              <p> Please <strong>scroll down</strong> to read more. </p>
+            </ul>
+          </nav>
+        
+            </nav>
+          
+            <section>
+                <article>
+                  <a id="data"><h2>Data Visualizations</h2></a>
+                  <p> Welcome to my data gallery! All graphs are done in R. </p>
+                  
+                  <p> <img src="/images/LifeDinner.png" width="400" height="300"> </p>
+                  <p> This model was created to observe the "life-dinner principle": 
+                    in co-evolutionary arms races, prey animals have the advantage in that they are 
+                    fighting for their lives whereas predators are just fighting for dinner. </p>
+
+                  <p> <img src="/images/MatingModel.png" width="400" height="300"> </p>
+                  <p> This model was made to investigate whether assortative mating can emerge from 
+                    individual mating motivations. 
+                    Agents will select one another as mates based on a 
+                    physical attractiveness variable. 
+                    This model is based loosely on Kalick and Hamilton (1986).</p>
+
+                  <p> <img src="/images/Disease.png" width="400" height="300"> </p>
+                  <p> A model of infectious disease transmission. Agents will move around a 2-dimensional surface 
+                    and potentially spread an infectious disease to those nearby.
+                    The model will manipulate the number of agents who move vs. stay in place (i.e. social distance) 
+                    and observe the effect of social distancing on disease spread. </p>
+
+          
+                  <p> <img src="/images/Conformity.png" width="400" height="300"> </p>
+                  <p> This is an agent based model. The purpose of this model is to explore 
+                    the emergence of fads as a function of varying levels of conformity 
+                    and anticonformity using facial hair trends over time. </p>
+          
+                  <p> <img src="/images/Schelling segregation model.png" width="400" height="300"> </p>
+                  <p> This is an agent based model of the Schelling segregation model.
+                      As long as individuals do not want to be the minority in their local neighborhood, 
+                      the agents will have the desire to be in different local environments. 
+                      So, after agents are allowed to move in accordance with their motivations, 
+                      highly segregated neighborhoods do appear:</p>
+          
+                  <p> <img src="/images/Monty hall problem.png" width="400" height="300"> </p>
+                  <p> This is an agent based model. Compare strategies within the Monty Hall Problem. Agents will take turns playing the guessing game 
+                      from the Monty Hall problem. The agent guessing strategy is plotted below.</p>
+          
+          
+                  <p> <img src="/images/confidence rating and recall density.png" width="400" height="300">
+                  
+                      </p>
+                      <p>This is the density and scatterplot for a confidence rating following a quiz for a cognitive psychology experiment. </p>
+                      
+                      <img src="/images/Availiability Heuristic.graph.png" width="400" height="300">
+                      <p>This is a bar graph for the mean of judged responses for word pairs in a cognitive psychology experiment.</p>
+                     
+                      <img src="/images/Belief_Mikah_Plot.png" width="400" height="300">
+                      <p>This is a bar graph for the number of responses for a question regarding perceived desire.</p>
+                          <hr>
+                          <p></p>
+                      
+                        </article>
+                      </section>
+                    </main>
+                    
+                  
+                    <!--FOOTER-->
+                    <footer>
+                      <p> <p> best viewed full screen on desktop </p>
+                        <img src="/images/runningdog.gif"
+                        style="object-fit:contain;
+                                width:92px;
+                                height:50px;>
+                      </p>
+                    </footer>
+                    <div class="container">
+                      
+                    </div>
+                  
+                   <div class="borderDiv">
+                  
+                  
+                   </div>
+                    
+                  
+                      
+                  </body>
+                  </html>
+              </article>
+            </section>
+          </main>
+          
