@@ -11,7 +11,7 @@
 
 <meta name="author" content="Mikah Nelson" />
 
-<meta name="date" content="2023-10-09" />
+<meta name="date" content="2023-10-10" />
 
 <title>Spatial Activities and Other Spatial Measures</title>
 
@@ -1482,7 +1482,7 @@ border-radius: 0px;
 <h1 class="title toc-ignore">Spatial Activities and Other Spatial
 Measures</h1>
 <h4 class="author">Mikah Nelson</h4>
-<h4 class="date">2023-10-09</h4>
+<h4 class="date">2023-10-10</h4>
 
 </div>
 
@@ -1883,7 +1883,7 @@ results</code></pre>
 <pre class="r"><code>#create a standardized data frame for scores
 standardDf &lt;- data.frame(scale(df,center = TRUE, scale = TRUE))
 
-#omit the incomplete data cases!
+#omit the incomplete data cases, only completely filled rows will be analyzed (optional step)
 standardDf &lt;- na.omit(standardDf)
 standardDf</code></pre>
 <pre><code>##            PID      absDsp inefficiency absWithinSilcton absBetweenSilcton
@@ -2085,6 +2085,9 @@ standardDf</code></pre>
 </div>
 <div id="create-linear-model" class="section level3">
 <h3>Create Linear Model</h3>
+<p>Can run this script with either all NA’s or na.omit [ted], which will
+analyze only completely filled in rows. In this version and its
+corresponding results, na.omit is set to run.</p>
 </div>
 <div id="navigation-model" class="section level3">
 <h3>Navigation Model</h3>
