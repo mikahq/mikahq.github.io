@@ -1,117 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title> mikah's webpage </title>
-             <style type="text/css">* {cursor: url(https://cur.cursors-4u.net/nature/nat-1/nat79.cur), auto !important;}</style>
-             <a href="https://www.cursors-4u.com/cursor/2005/12/21/nat79.html" target="_blank" title="Rubber Ducky">
-            <img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Rubber Ducky" style="position:absolute; top: 0px; right: 0px;" /></a><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Snowball 2" style="position:absolute; top: 0px; right: 0px;" /></a>
+  <head>
+    <meta charset=utf-8>
+    <meta content="width=device-width,initial-scale=1" name=viewport>
+    <meta content=#333333 name=theme-color>
+    <base href=/>
+    <link href=css/output.css rel=stylesheet>
+    <link href=css/style.css rel=stylesheet>
+    <link href=manifest.json rel=manifest>
+    <link href=favicon.ico rel=icon type=image/png>
+    <title>MN</title><noscript id=sapper-head-end></noscript>
+  </head>
 
-            <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-            <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-            <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-            <link rel="manifest" href="/site.webmanifest">
-            <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-            <meta name="msapplication-TileColor" content="#da532c">
-            <meta name="theme-color" content="#ffffff">
-            
-            
-            <link rel="stylesheet" href="/css/style.css">
-            <body onload="startTime()">
-                
-                <div id="txt"></div>
-                
-                <script>
-                function startTime() {
-                  const today = new Date();
-                  let h = today.getHours();
-                  let m = today.getMinutes();
-                  let s = today.getSeconds();
-                  m = checkTime(m);
-                  s = checkTime(s);
-                  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
-                  setTimeout(startTime, 1000);
-                }
-                
-                function checkTime(i) {
-                  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-                  return i;
-                }
-                </script>
-        
-        </head>
-        
-        <body>
-        <a target="myFrame"
-        <li>
+  <body class=bg-gray-0>
+    <div id=sapper>
+      <main class=text-gray-900>
+        <div class="pt-2 p-6 w-3/4">
+          <a target="myFrame"
+         
           <a href="/research/index.html"> research - </a>
           </a>
-          <a href="/projects/index.html"> projects - </a>
+          <a href="/coding/index.html"> coding - </a>
           </a>
-          <a href="/data gallery/index.html"> data gallery - </a>
+          <a href="/ux/index.html"> ux - </a>
           </a>
-          <a href="/about me/index.html">about me</a></li>
+          <a href="/design/index.html"> design </a></li>
           </a>
           <br></br>
-          <!--HEADER-->
-          <header>
-            
-          </header>
-        
-          <!--MAIN-->
-          <main>
-        
-            <!--NAVIGATION-->
-            <nav>
-              <h2 style="color:black;">welcome!</h2>
-              <p> This page is hand coded custom HTML and CSS by Mikah. <br>
-                <br>
-                Please <strong>explore</strong> to read more about my work.
-                 Thank you for visiting! 
-                
-            </a> </p>
-            </ul>
-          </nav>
-        
-            </nav>
-          
-        
-            <section>
-              <article>
-                <h4><strong> Mikah Nelson </strong></h4>
-                
-                <p> researcher & artist! </p>
-                  For a more complete record of my academic journey: click
-                  <a href="/images/CV_Mikah_Nelson.pdf"> here </a> to view my CV.</p>
-                  <p> click <a href="/projects/index.html"> here </a> to see my projects,
-                  or find it in the navigation up top!</p> 
-                  <img src="/images/3d model.jpg" width="300" height="300">
-                  <figcaption> ^ my 3D digital render of a vase in Blender</figcaption>
-              </article>
-            </section>
-          </main>
-          
-        
-          <!--FOOTER-->
-          <footer>
-            <p> <p> best viewed full screen on desktop </p>
-              <img src="/images/runningdog.gif"
-              style="object-fit:contain;
-                      width:92px;
-                      height:50px;>
-            </p>
-          </footer>
-          <div class="container">
-            
+
+          <h1 class="font-bold leading-none lg:text-7xl md:text-7xl text-6xl">Mikah Nelson</h1>
+          <h2 class="font-bold leading-none lg:text-5xl md:text-5xl text-3xl mb-4 md:mb-0">student researcher</h2>
+          <p class=text-sm> <br></br>For a more complete record of my academic journey click
+            <a href="/images/CV_Mikah_Nelson.pdf"> <strong> here </strong> </a> to view my CV.</p>
+          <p class=text-xs>
+        </div>
+        <div class="grid gap-6 grid-cols-1 lg:grid-cols-4 mb-20 md:grid-cols-3 px-6 sm:grid-cols-1">
+          <div
+            class="col-span-1 lg:col-span-1 lg:text-sm md:col-span-1 md:text-sm pt-0 sm:col-span-1 text-xs xxl:col-span-1">
+            <div class="flex justify-between flex-col h-full p-0 rounded-lg shadow-l">
+              <div>
+                <h2 class="text-5xl pb-2">01</h2>
+                <div class="grid border-gray-500 border-t grid-cols-3 pb-2 pt-2">
+                  <div class=col-span-1>
+                    <p class=font-bold> Research
+                  </div>
+                  <div class=col-span-2>Spatial Cognition, Social-cog Development, Media Psychology</div>
+                </div>
+                <!-- <div class="grid border-gray-500 border-t grid-cols-3">
+                  <div class="col-span-1 pb-0 py-2">
+                    <p class="">codepen.io
+                  </div> <a class="col-span-2 lg:col-span-2 hover:bg-gray-100 py-2"
+                    href=https://codepen.io/rscheuer/pen/mdBxPaB target=_blank>/rscheuer/pen/mdBxPaB</a>
+                </div> -->
+                <div class="grid border-gray-500 border-t grid-cols-3 pb-2 pt-2">
+                  <div class="col-span-1 lg:col-span-1">
+                    <p class=font>Description 
+                  </div>
+                  <div class="pt-2 col-span-2 lg:col-span-2 lg:pt-0">
+                    <p> How do spatial experiences and
+                      skill impact our spatial ability? How do we evaluate social concepts and think about spatial ones
+                       across development? <br> Click below to read my specifics. </p>
+                  </div>
+                </div>
+              </div> <a class="" href="/research/index.html">
+                <div class="h-80 img-preview lg:h-64 md:h-40"> <img alt="mental rotation task"
+                  src= "/images/mental-rotation-image.png">
+                  <img alt="mental rotation task"
+                    src= "/images/mental-rotation-image.png">
+                  <div class="py-3 px-3 view-more w-full">
+                    <div class="py-2 bg-gray-800 flex justify-between px-3 rounded shadow-xl text-gray-50"><span>VIEW
+                        MORE</span> <span class=arrow>→</span></div>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
-        
-         <div class="borderDiv">
-        
-        
-         </div>
           
-        
-            
-        </body>
-        </html>
+          <div
+            class="col-span-1 lg:col-span-1 lg:text-sm md:col-span-1 md:text-sm pt-0 sm:col-span-1 text-xs xxl:col-span-1">
+            <div class="flex justify-between flex-col h-full p-0 rounded-lg shadow-l">
+              <div>
+                <h2 class="text-5xl pb-2">02</h2>
+                <div class="grid border-gray-500 border-t grid-cols-3 pb-2 pt-2">
+                  <div class=col-span-1>
+                    <p class=font-bold> Coding
+                  </div>
+                  <div class=col-span-2> R/Rstudio, HTML/CSS, p5.js, Python </div>
+                </div>
+              
+                <div class="grid border-gray-500 border-t grid-cols-3 pb-2 pt-2">
+                  <div class="col-span-1 lg:col-span-1">
+                    <p class=font>Description
+                  </div>
+                  <div class="pt-2 col-span-2 lg:col-span-2 lg:pt-0">
+                    <p> Used for statistical analyses, agent based modeling, and 
+                      creative computing visualizations and/or projects. </p>
+                  </div>
+                </div>
+              </div> <a class="" href="/coding/index.html">
+                <div class="h-80 img-preview lg:h-64 md:h-40"> <img alt="Beaver temperatures visualized"
+                    src="/images/Beaver Temperatures p5js.png">
+                    <img alt="beaver temperatures visualized"
+                    src="/images/Beaver Temperatures p5js.png">
+                  <div class="py-3 px-3 view-more w-full">
+                    <div class="py-2 bg-gray-800 flex justify-between px-3 rounded shadow-xl text-gray-50"><span>VIEW
+                        MORE</span> <span class=arrow>→</span></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- <div
+            class="col-span-1 lg:col-span-1 lg:text-sm md:col-span-1 md:text-sm pt-0 sm:col-span-1 text-xs xxl:col-span-1">
+            <div class="flex justify-between flex-col h-full p-0 rounded-lg shadow-l">
+              <div>
+                <h2 class="text-5xl pb-2">03</h2>
+                <div class="grid border-gray-500 border-t grid-cols-3 pb-2 pt-2">
+                  <div class=col-span-1>
+                    <p class=font-bold> UX
+                  </div>
+                  <div class=col-span-2> Qualtrics, Figma </div>
+                </div>
+                
+                <div class="grid border-gray-500 border-t grid-cols-3 pb-2 pt-2">
+                  <div class="col-span-1 lg:col-span-1">
+                    <p class=font>Description
+                  </div>
+                  <div class="pt-2 col-span-2 lg:col-span-2 lg:pt-0">
+                    <p> Used for visualizing user journeys and prototyping
+                      and gathering qualitative data through survey responses.
+                     </p>
+                  </div>
+                </div>
+              </div> <a class="" href="ux/index.html">
+                <div class="h-80 img-preview lg:h-64 md:h-40"> <img alt="Figma screenshot"
+                    src="/images/figma GOLD redesign.png">
+                  <img alt="Figma screenshot"
+                    src="/images/figma GOLD redesign.png">
+                  <div class="py-3 px-3 view-more w-full">
+                    <div class="py-2 bg-gray-800 flex justify-between px-3 rounded shadow-xl text-gray-50"><span>VIEW
+                        MORE</span> <span class=arrow>→</span></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div -->
+            <!-- class="col-span-1 lg:col-span-1 lg:text-sm md:col-span-1 md:text-sm pt-0 sm:col-span-1 text-xs xxl:col-span-1"> -->
+            <div class="flex justify-between flex-col h-full p-0 rounded-lg shadow-l">
+              <div>
+                <h2 class="text-5xl pb-2">03</h2>
+                <div class="grid border-gray-500 border-t grid-cols-3 pb-2 pt-2">
+                  <div class=col-span-1>
+                    <p class=font-bold>Design
+                  </div>
+                  <div class=col-span-2> ClipStudioPaint, Adobe Photoshop, Krita</div>
+                </div>
+                
+                <div class="grid border-gray-500 border-t grid-cols-3 pb-2 pt-2">
+                  <div class="col-span-1 lg:col-span-1">
+                    <p class=font>Description
+                  </div>
+                  <div class="pt-2 col-span-2 lg:col-span-2 lg:pt-0">
+                    <p> Exercising
+                      drawing as a tool, and creating.
+                    </p>
+                  </div>
+                </div>
+              </div> <a class="" href="design/index.html">
+                <div class="h-80 img-preview lg:h-64 md:h-40"> 
+                  <img alt="Two persons working on a website together"
+                    src="/images/goldfish.jpg">
+                  <img alt="Images inline with text"
+                    src="/images/goldfish.jpg">
+                  <div class="py-3 px-3 view-more w-full">
+                    <div class="py-2 bg-gray-800 flex justify-between px-3 rounded shadow-xl text-gray-50"><span>VIEW
+                        MORE</span> <span class=arrow>→</span></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script></script>
