@@ -1,101 +1,13 @@
-.img-preview {
-  position: relative;
-  overflow: hidden;
-  border-radius: 0.5em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.img-preview img {
-  position: absolute;
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  transition: all 0.2s;
-}
-.img-preview img:first-child {
-  z-index: 2;
-}
-.img-preview:hover img {
-  transition: all 0.2s;
-  transform: scale(1.05);
-}
-.img-preview:hover img:first-child {
-  opacity: 0;
-}
-.img-post-preview {
-  position: relative;
-  overflow: hidden;
-  border-radius: 0.5em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.img-post-preview img {
-  position: absolute;
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  transition: all 0.2s;
-}
-.img-post-preview:hover img {
-  transition: all 0.2s;
-  transform: scale(1.05);
+h1 {
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800; /* Adjust the weight according to your preference */
+    font-style: normal;
 }
 
-.img-preview .view-more {
-  position: absolute;
-  bottom: 0%;
-  transform: translateY(100%);
-  opacity: 0;
-  z-index: 40;
-  transition: all 0.2s ease-in-out;
+p {
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500; /* Adjust the weight according to your preference */
+    font-style: normal;
 }
-.img-preview .view-more .arrow {
-  transform: translateX(-6px);
-  transition: all 0.2s ease-in-out;
-}
-.img-preview .view-more:hover .arrow {
-  transform: translateX(0px);
-}
-.img-preview:hover .view-more {
-  opacity: 1;
-  transform: translateY(0%);
-}
-
-.content p, .content pre, .content img {
-  margin-bottom: 2rem !important;
-}
-.content h3 {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-}
-.content h2 {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  margin-bottom: 0.5rem;
-}
-.content h1 {
-  font-size: 2rem;
-  line-height: 1;
-  margin-bottom: 0.5rem;
-}
-.content pre::after {
-  background-color: #242322 !important;
-}
-.content a {
-  text-decoration: underline;
-  color: #00000082;
-}
-.content img {
-  width: 100%;
-  border-radius: 0.4em;
-}
-
-/*# sourceMappingURL=stealing.css.map */
