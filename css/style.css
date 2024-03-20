@@ -4,10 +4,11 @@
   z-index: 3;
 }
 body {
-  background-color: rgb(227, 227, 227);
+  background-color: rgb(255, 255, 255);
     text-align:left;
     margin-left: 15%; 
     margin-right: 15%; 
+    font-family: "Geist";
 
 }
 
@@ -44,9 +45,9 @@ h2 {
 }
 
 h3{
-    font-family: "Roslindale Condensed", sans-serif;
+    font-family: "Geist", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600; /* Adjust the weight according to your preference */
+    font-weight: 300; /* Adjust the weight according to your preference */
     font-style: normal;
     font-size: 30px;
     color: rgb(0, 0, 0);
@@ -89,7 +90,7 @@ p {
 
  /* unvisited link */
  a:link {
-    color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
     text-decoration: none;
   }
   
@@ -101,7 +102,7 @@ p {
   /* mouse over link */
   a:hover {
     font-style: italic;
-    text-decoration: none;
+    text-decoration: underline;
   }
 
   .responsive {
@@ -127,8 +128,8 @@ p {
     font-weight: bold;
   }
   .line-text h4 a {
-    color: blue; /* Change link color */
-    text-decoration: none; /* Underline link */
+    color: rgb(0, 0, 0); /* Change link color */
+    text-decoration: underline; /* Underline link */
   }
 
 
@@ -145,22 +146,32 @@ p {
   }
 
   .oval {
-    height: 50px;
-    width: 100px;
-    border: 2px solid #000000; /* Change to border */
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
+    display: inline-flex;
     align-items: center;
-  }
-  .oval-text {
-    color: #000000; /* Text color */
-  }
+    justify-content: center;
+    padding: 5px; 
+    border: 1px solid #000000;
+    border-radius: 50%;
+    max-width: 100%; 
+    vertical-align: middle;
+}
+
+.oval-text {
+    color: #000000;
+    font-family: "Geist";
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    padding: 0;
+}
+
   
   w{
-    font-family: "Roslindale Condensed", sans-serif;
-    font-size: 10vh;
-    font-weight: 900; /* Adjust the weight according to your preference */
+    font-family: "Geisy", sans-serif;
+    font-size: 30px;
+    font-weight: 400; /* Adjust the weight according to your preference */
     font-style: normal;
     color: rgb(0, 0, 0);
   }
