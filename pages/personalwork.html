@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikah Nelson - More</title>
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="../favicon.ico" rel="icon" type="image/png">
+    <style>
+       
+
+        .content-container {
+            display: flex;
+            height: calc(100vh - 100px); /* Adjust height based on header size */
+        }
+
+        .sidebar {
+            width: 20%;
+            padding: 20px;
+            background-color: #ffffff;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            padding: 5px;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><a href="../index.html">Mikah Nelson</a></h1>
+        <nav>
+            <a href="../index.html">WORK</a> |
+            <a href="about.html">ABOUT</a>
+        </nav>
+    </div>
+
+    <div class="content-container">
+        <div class="sidebar">
+            <p>Here are some more of my interests...</p>
+
+            <mainttitle><a href="montyhallproblem.html" onclick="loadContent(event, 'montyhallproblem.html')">Agent Based Modeling</a></mainttitle>
+            <br>
+            <mainttitle><a href="https://editor.p5js.org/mikahn/sketches/5MsdR6yFx" onclick="loadIframeContent(event, 'https://editor.p5js.org/mikahn/sketches/5MsdR6yFx')">Creative Coding</a></mainttitle>
+            <br>
+            <mainttitle><a href="https://mikah.artstation.com/" onclick="loadIframeContent(event, 'https://mikah.artstation.com/')">Art</a></mainttitle>
+            
+        </div>
+        <div class="main-content" id="main-content">
+            <!-- Dynamic content will be loaded here -->
+        </div>
+    </div>
+
+    <script>
+        function loadContent(event, url) {
+            event.preventDefault();
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('main-content').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading content:', error));
+        }
+
+        function loadIframeContent(event, url) {
+            event.preventDefault();
+            document.getElementById('main-content').innerHTML = '<iframe src="' + url + '"></iframe>';
+        }
+    </script>
+</body>
+</html>

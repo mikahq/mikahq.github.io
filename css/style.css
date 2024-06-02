@@ -8,7 +8,7 @@
 
 
 ::selection {
-  background: rgb(163, 1, 1); 
+  background: rgb(184, 0, 0); 
   color: rgb(255, 213, 213);
   border-radius: 10px; 
 }
@@ -18,10 +18,7 @@
   src: url("../fonts/NyghtSerif-LightItalic.otf") format("otf"), url("../fonts/NyghtSerif-LightItalic.otf")  format("opentype");
 }
 
-.lander{
-  text-align:center;
-  z-index: 3;
-}
+
 body {
   background-color: rgb(255, 255, 255);
     text-align:left;
@@ -39,6 +36,17 @@ h1 {
     font-style: normal;
     font-size: 40px;
     color: rgb(0, 0, 0);
+}
+
+mainttitle {
+
+  font-family: Nyght Serif;
+  font-optical-sizing: 50vh;
+  font-weight: 600; /* Adjust the weight according to your preference */
+  font-style: normal;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+
 }
 
 h2 {
@@ -80,16 +88,18 @@ h5{
     font-weight: 400; /* Adjust the weight according to your preference */
     font-style: normal;
     color: #000000;
-    font-size: 15px;
+    font-size: 25px;
     font-stretch: ultra-condensed;
 }
 
 p {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
     font-optical-sizing: auto;
     font-weight: 400; /* Adjust the weight according to your preference */
     font-style: normal;
     color: #000000;
+    
   
 }
 
@@ -117,17 +127,6 @@ a:visited {
   }
 
 
-  .landing-page {
-    height: 100vh;
-    background-color: 227, 227, 227;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 2rem;
-    z-index: 2;
-  }
-
   .oval {
     display: inline-flex;
     align-items: center;
@@ -141,7 +140,7 @@ a:visited {
 
 .oval-text {
     color: #000000;
-    font-family: "Geist";
+    font-family: "Arial";
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
@@ -150,7 +149,85 @@ a:visited {
     padding: 0;
 }
 
-  
+.column {
+  float: left;
+  width: 30%;
+}
+
+.columnskillstools {
+  float:left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.row {
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #de1c1c;
+  border-radius: 50%;
+  display: inline-block;
+}
+.float-right {
+  float: right;
+  margin: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* .box {
+  width: 96vw;
+  height: 15vh;
+  background-color: #b20000;
+  color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin: 0;
+} */
+
+/* hijacked from stealing.rocks */
+.img{
+  border-radius: 2px;
+  width: 6vw;
+  height: 3.7vw ;
+  background: grey;
+  background-image: url("/images/goldfish.jpg");
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.one{
+  background-image: url("/images/flowers.png");
+}
+.two{
+  background-image: url("/images/mariasredesign.png");
+  width: 16vw;
+}
+
   w{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400; /* Adjust the weight according to your preference */
@@ -160,8 +237,8 @@ a:visited {
 
   w span {
     display:inline-block;
-    animation: wiggle 1s infinite;
-    animation-delay: calc(var(--animation-order) * 700ms);
+    animation: wiggle 1s ease-in;
+    animation-delay: calc(var(--animation-order) * 600ms);
     transform-origin: center;
     animation-timing-function: ease-in-out;
   }
