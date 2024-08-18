@@ -1,15 +1,38 @@
+.logo {
+  display: flex; /* Use flexbox to align content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 100%; /* Ensure full width */
+  padding: 20px 0;
+  background-color: transparent;
+  margin-bottom: 20px; /* Space below the logo */
+}
+
+.logo h1 {
+  font-size: 110px; /* Adjust as needed */
+  font-weight: 700;
+  background: rgb(8, 1, 208); 
+  color:  rgb(248, 181, 181);
+  margin: 0;
+}
 
 
 .header {
-  display: flex; /* Use flexbox layout */
-  justify-content: space-between; /* Space items evenly along the main axis */
-  align-items: center; /* Align items vertically */
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
 }
+
+
 
 
 ::selection {
   background: rgb(8, 1, 208); 
-  color: rgb(255, 213, 213);
+  color: rgb(248, 181, 181);
   border-radius: 10px; 
 }
 
@@ -17,6 +40,12 @@
   font-family: Nyght Serif;
   src: url("../fonts/NyghtSerif-LightItalic.otf") format("otf"), url("../fonts/NyghtSerif-LightItalic.otf")  format("opentype");
 }
+
+@font-face {
+  font-family: Arial Narrow;
+  src: url("../fonts/arialnarrow.ttf") format("ttf"), url("../fonts/arialnarrow.ttf")  format("truetype");
+}
+
 
 
 body {
@@ -49,8 +78,8 @@ mainttitle {
 
 }
 
-h2 {z
-    font-family: Arial, Helvetica, sans-serif;
+h2 {
+    font-family: Arial Narrow;
     font-optical-sizing: auto;
     font-weight: 500; /* Adjust the weight according to your preference */
     font-style: normal;
@@ -60,7 +89,7 @@ h2 {z
 }
 
 h3{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial Narrow;
     font-optical-sizing: auto;
     font-weight: 400; /* Adjust the weight according to your preference */
     font-style: normal;
@@ -71,7 +100,7 @@ h3{
 }
 
 h4{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial ;
   font-optical-sizing: auto;
   font-weight: 400; /* Adjust the weight according to your preference */
   font-style: normal;
@@ -83,7 +112,7 @@ h4{
 }
 
 h5{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial Narrow;
     font-optical-sizing: auto;
     font-weight: 400; /* Adjust the weight according to your preference */
     font-style: normal;
