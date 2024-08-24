@@ -51,11 +51,25 @@ by Antoine Sigur*/
 }
 
 .logo h1 {
-  font-size: 20vh; 
+  font-size: 90px; 
   font-weight: 700;
   margin: 0;
   max-width: 100%;
 }
+
+@media (max-width: 768px) {
+  .logo h1 {
+    font-size: 80px;
+  }
+}
+
+/* Styles for phones */
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 50px;
+  }
+}
+
 
 
 .section {
