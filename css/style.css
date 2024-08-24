@@ -16,7 +16,7 @@
   align-items: center;
   max-width: 100%;
   background-image: url("../images/gradientbg.png");
-  background-size: cover;
+  background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
@@ -51,7 +51,7 @@ by Antoine Sigur*/
 }
 
 .logo h1 {
-  font-size: 110px; 
+  font-size: 20vh; 
   font-weight: 700;
   margin: 0;
   max-width: 100%;
