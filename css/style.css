@@ -1,65 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 .logo {
-  display: flex; /* Use flexbox to align content */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  width: 100%; /* Ensure full width */
-  padding: 20px 0;
-  background-color: transparent;
-  margin-bottom: 20px; /* Space below the logo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: url("../images/gradientbg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: Lunchtype;
+}
+
+::selection {
+  background: rgb(8, 1, 208); 
+  color: rgb(255, 188, 205);
+  border-radius: 10px; 
+}
+
+@font-face {
+  font-family: Hikarumon;
+  src: url("../fonts/HIKARUMONO-Regular.otf") format("otf"), url("../fonts/HIKARUMONO-Regular.otf")  format("opentype");
+}
+ /* https://uncut.wtf/display/hikaru-mono/ Font is HIKARU MONO
+by Antoine Sigur*/
+
+@font-face {
+  font-family: 'Lunchtype';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Lunchtype22-Regular.ttf') format('woff');
+  /* https://uncut.wtf/sans-serif/lunchtype/ Font is Lunchtype22 by Stefan Wetterstrand */
 }
 
 .logo h1 {
   font-size: 110px; /* Adjust as needed */
   font-weight: 700;
-  background: rgb(8, 1, 208); 
-  color:  rgb(248, 181, 181);
   margin: 0;
 }
 
 
-.header {
-  
+.section {
+  display: flex; /* Use flexbox to align content */
+  flex-direction: column; /* Stack child elements vertically */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+
+.nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; /* Space links evenly */
   width: 100%;
-  text-align: left;
-  margin-bottom: 20px;
+  padding: 2%;
+  top: 0; /* Align to the top of the section */
 }
 
 
-
-
-::selection {
-  background: rgb(8, 1, 208); 
-  color: rgb(248, 181, 181);
-  border-radius: 10px; 
-}
-
-@font-face {
-  font-family: Nyght Serif;
-  src: url("../fonts/NyghtSerif-LightItalic.otf") format("otf"), url("../fonts/NyghtSerif-LightItalic.otf")  format("opentype");
-}
-
-@font-face {
-  font-family: Arial Narrow;
-  src: url("../fonts/arialnarrow.ttf") format("ttf"), url("../fonts/arialnarrow.ttf")  format("truetype");
-}
-
-
-
-body {
-  background-color: rgb(255, 255, 255);
-    text-align:left;
-    margin-left: 2%; 
-    margin-right: 2%; 
-    font-family: Arial, Helvetica, sans-serif;
-
-}
 
 h1 {
     float: left;
-    font-family: Nyght Serif;
+    font-family: Hikarumon;
     font-optical-sizing: 50vh;
     font-weight: 600; /* Adjust the weight according to your preference */
     font-style: normal;
@@ -69,69 +81,75 @@ h1 {
 
 mainttitle {
 
-  font-family: Nyght Serif;
+  font-family: Lunchtype;
   font-optical-sizing: 50vh;
   font-weight: 600; /* Adjust the weight according to your preference */
   font-style: normal;
   font-size: 40px;
   color: rgb(0, 0, 0);
+  margin: 2%;
 
 }
 
 h2 {
-    font-family: Arial Narrow;
+    font-family: Lunchtype;
     font-optical-sizing: auto;
     font-weight: 500; /* Adjust the weight according to your preference */
     font-style: normal;
     font-size: 30px;
     color: rgb(0, 0, 0);
+    margin: 2%;
     
 }
 
 h3{
-    font-family: Arial Narrow;
+    font-family: Lunchtype;
     font-optical-sizing: auto;
     font-weight: 400; /* Adjust the weight according to your preference */
     font-style: normal;
     font-size: 20px;
     color: rgb(70, 70, 70);
+    margin: 2%;
     
 
 }
 
 h4{
-  font-family: Arial ;
+  font-family: Lunchtype;
   font-optical-sizing: auto;
   font-weight: 400; /* Adjust the weight according to your preference */
   font-style: normal;
   font-size: 15px;
   color: rgb(0, 0, 0);
   font-stretch: ultra-condensed;
+  margin: 2%;
   
 
 }
 
 h5{
-  font-family: Arial Narrow;
+  font-family: Lunchtype;
     font-optical-sizing: auto;
+    text-align: right;
+    
     font-weight: 400; /* Adjust the weight according to your preference */
     font-style: normal;
     color: rgb(0, 0, 0);
     font-size: 25px;
-    font-stretch: ultra-condensed;
+    margin: 2%;
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Lunchtype;
     font-size: 20px;
     font-optical-sizing: auto;
     font-weight: 400; /* Adjust the weight according to your preference */
     font-style: normal;
     color: rgb(0, 0, 0);
+    margin: 2%;
     
-  
+    
 }
-
 
 
  /* unvisited link */
@@ -169,13 +187,19 @@ a:visited {
 
 .oval-text {
     color: #000000;
-    font-family: "Arial";
+    font-family: Lunchtype;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     margin: 0;
     padding: 0;
+}
+
+.rounded-image {
+  border-radius: 10%; 
+  object-fit: cover; 
+  margin: 2%;
 }
 
 .column {
@@ -216,39 +240,6 @@ a:visited {
   height: auto;
 }
 
-/* .box {
-  width: 96vw;
-  height: 15vh;
-  background-color: #b20000;
-  color: #fff;
-  padding: 10px;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  margin: 0;
-} */
-
-/* hijacked from stealing.rocks */
-.img{
-  border-radius: 2px;
-  width: 6vw;
-  height: 3.7vw ;
-  background: grey;
-  background-image: url("/images/goldfish.jpg");
-  background-position: center; 
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: inline-block;
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-.one{
-  background-image: url("/images/flowers.png");
-}
-.two{
-  background-image: url("/images/mariasredesign.png");
-  width: 16vw;
-}
 
   w{
     font-family: Arial, Helvetica, sans-serif;
