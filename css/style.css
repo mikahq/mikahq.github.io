@@ -6,10 +6,9 @@
 
 @media (max-width: 768px) {
   .responsive-element {
-    width: 100%;
+    max-width: 100%;
   }
 }
-
 
 .logo {
   display: flex;
@@ -27,6 +26,7 @@
 body {
   background-color: rgb(255, 255, 255);
   font-family: Lunchtype;
+  overflow-x: hidden;
 }
 
 ::selection {
