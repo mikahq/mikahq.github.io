@@ -1,38 +1,36 @@
+/* Reset default margins and paddings */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Responsive design adjustments */
 @media (max-width: 768px) {
   .responsive-element {
     max-width: 100%;
   }
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
-  background-image: url("../images/gradientbg.png");
-  background-size:cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
   
-}
-
-body {
-  background-color: rgb(255, 255, 255);
-  font-family: Lunchtype;
-  overflow-x: hidden;
-}
-
-::selection {
-  background: rgb(8, 1, 208); 
-  color: rgb(255, 188, 205);
-  border-radius: 10px; 
+  .logo {
+    height: auto; /* Adjust height for smaller screens */
+    padding: 0; /* Ensure no extra padding */
+  }
+  
+  .column, .columnskillstools {
+    width: 100%; /* Stack columns vertically on small screens */
+    max-width: 100%; /* Ensure full width usage */
+  }
+  
+  .row {
+    flex-direction: column; /* Stack items vertically in small screens */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  .nav {
+    padding: 1%; /* Reduce padding for small screens */
+    flex-direction: column; /* Stack nav items vertically if needed */
+    gap: 10px; /* Add gap between items */
+  }
 }
 
 @font-face {
@@ -50,173 +48,160 @@ by Antoine Sigur*/
   /* https://uncut.wtf/sans-serif/lunchtype/ Font is Lunchtype22 by Stefan Wetterstrand */
 }
 
+::selection {
+  background: rgb(8, 1, 208); 
+  color: rgb(255, 188, 205);
+  border-radius: 10px; 
+}
+
+
+/* General Body Styles */
+body {
+  background-color: #ffffff;
+  font-family: 'Lunchtype', sans-serif;
+  overflow-x: hidden; 
+}
+
+/* Image Styles */
+.rounded-image {
+  border-radius: 10%; 
+  object-fit: cover; 
+  margin: 0; 
+}
+
+/* Logo Styles */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  background-image: url("../images/gradientbg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+}
+
+/* Header Styles */
 .logo h1 {
-  font-size: 110px; 
+  font-size: 60vh;
   font-weight: 700;
   margin: 0;
   max-width: 100%;
 }
 
-
-
+/* Section Styles */
 .section {
-  display: flex; 
-  flex-direction: column; 
-  max-height: 100vh; 
-  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  overflow: auto; /* Allow scrolling if content overflows */
+  padding: 0;
 }
 
-
+/* Navigation Styles */
 .nav {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   width: 100%;
-  padding: 2%;
-  top: 0;
+  padding: 0; /* Reset padding */
 }
 
+/* Header Font Styles */
+h1, h2, h3, h4, h5, p {
+  font-family: 'Lunchtype', sans-serif;
+  font-style: normal;
+  color: #000000;
+  font-weight: 400;
 
+}
 
 h1 {
-    float: left;
-    font-family: Hikarumon;
-    font-optical-sizing: 50vh;
-    font-weight: 600; /* Adjust the weight according to your preference */
-    font-style: normal;
-    font-size: 40px;
-    color: rgb(0, 0, 0);
+  font-family: 'Hikarumon', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
 }
 
 mainttitle {
-
   font-family: Lunchtype;
   font-optical-sizing: 50vh;
-  font-weight: 600; /* Adjust the weight according to your preference */
+  font-weight: 600;
   font-style: normal;
   font-size: 40px;
   color: rgb(0, 0, 0);
   margin: 2%;
-
 }
+
 
 h2 {
-    font-family: Lunchtype;
-    font-optical-sizing: auto;
-    font-weight: 500; /* Adjust the weight according to your preference */
-    font-style: normal;
-    font-size: 30px;
-    color: rgb(0, 0, 0);
-    margin: 2%;
-    
+  font-weight: 500;
+  font-size: 30px;
 }
 
-h3{
-    font-family: Lunchtype;
-    font-optical-sizing: auto;
-    font-weight: 400; /* Adjust the weight according to your preference */
-    font-style: normal;
-    font-size: 20px;
-    color: rgb(70, 70, 70);
-    margin: 2%;
-    
-
+h3 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #464646;
 }
 
-h4{
-  font-family: Lunchtype;
-  font-optical-sizing: auto;
-  font-weight: 400; /* Adjust the weight according to your preference */
-  font-style: normal;
+h4 {
+  font-weight: 400;
   font-size: 15px;
-  color: rgb(0, 0, 0);
   font-stretch: ultra-condensed;
-  margin: 2%;
-  
-
 }
 
-h5{
-  font-family: Lunchtype;
-    font-optical-sizing: auto;
-    text-align: right;
-    
-    font-weight: 400; /* Adjust the weight according to your preference */
-    font-style: normal;
-    color: rgb(0, 0, 0);
-    font-size: 25px;
-    margin: 2%;
+h5 {
+  font-weight: 400;
+  font-size: 25px;
+  text-align: right;
 }
 
 p {
-    font-family: Lunchtype;
-    font-size: 20px;
-    font-optical-sizing: auto;
-    font-weight: 400; /* Adjust the weight according to your preference */
-    font-style: normal;
-    color: rgb(0, 0, 0);
-    margin: 2%;
-    
-    
+  font-size: 20px;
 }
 
-
- /* unvisited link */
- a:link {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-  }
-  
-  /* visited link */
-a:visited {
-  color: rgb(0, 0, 0);;
+/* Link Styles */
+a:link, a:visited {
+  color: #000000;
+  text-decoration: none;
 }
 
-  /* mouse over link */
-  a:hover {
-    font-style: italic;
-  }
+a:hover {
+  font-style: italic;
+}
 
-  .responsive {
-    max-width: 100%;
-    height: auto;
-  }
+/* Responsive Images and Elements */
+.responsive, .rounded-image {
+  max-width: 100%;
+  height: auto;
+}
 
-
-  .oval {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px; 
-    border: 1px solid #000000;
-    border-radius: 50%;
-    max-width: 100%; 
-    vertical-align: middle;
+.oval {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: 1px solid #000000;
+  border-radius: 50%;
 }
 
 .oval-text {
-    color: #000000;
-    font-family: Lunchtype;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin: 0;
-    padding: 0;
+  color: #000000;
+  font-family: 'Lunchtype', sans-serif;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.rounded-image {
-  border-radius: 10%; 
-  object-fit: cover; 
-  margin: 2%;
-}
-
-.column {
+/* Column Styles */
+.column, .columnskillstools {
   float: left;
-  width: 30%;
+  width: 30%; /* Adjusted to fit responsive design */
+  padding: 0; /* Reset padding */
 }
 
 .columnskillstools {
-  float:left;
   width: 50%;
 }
 
@@ -227,6 +212,187 @@ a:visited {
   clear: both;
 }
 
+/* Content Wrapper */
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Row Styles */
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Float Right */
+.float-right {
+  float: right;
+  margin: 0; /* Reset margin */
+  max-width: 100%;
+  height: auto;
+}
+
+/* Animation Styles */
+@keyframes wiggle {
+  0% { transform: scale(1.0) translateY(0px) rotate(0deg); }
+  20% { transform: scale(1.0) translateY(-2px) rotate(-3deg); }
+  40% { transform: scale(1.1) translateY(-2px) rotate(3deg); }
+  60% { transform: scale(1.0) translateY(2px) rotate(-3deg); }
+  80% { transform: scale(0.95) translateY(-2px) rotate(3deg); }
+  100% { transform: scale(1.0) translateY(0px) rotate(0deg); }
+}
+
+.w span {
+  display: inline-block;
+  animation: wiggle 2s ease-in-out;
+  animation-delay: calc(var(--animation-order) * 700ms);
+}
+
+
+.rounded-image {
+  border-radius: 10%; 
+  object-fit: cover; 
+  margin: 2%;
+}
+
+/* Logo Styles */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  background-image: url("../images/gradientbg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Header Styles */
+.logo h1 {
+  font-size: 110px;
+  font-weight: 700;
+  margin: 0;
+  max-width: 100%;
+}
+
+/* Section Styles */
+.section {
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh; /* Ensure section does not exceed viewport height */
+  overflow: auto; /* Allow scrolling if content overflows */
+}
+
+/* Navigation Styles */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2%;
+  top: 0;
+}
+
+/* Header Font Styles */
+h1, h2, h3, h4, h5, p {
+  font-family: 'Lunchtype', sans-serif;
+  font-style: normal;
+  color: #000000;
+  margin: 2%;
+}
+
+h1 {
+  font-family: 'Hikarumon', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.mainttitle {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #464646;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 15px;
+  font-stretch: ultra-condensed;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 25px;
+  text-align: right;
+}
+
+p {
+  font-size: 20px;
+}
+
+/* Link Styles */
+a:link, a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  font-style: italic;
+}
+
+/* Responsive Images and Elements */
+.responsive, .rounded-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.oval {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+
+.oval-text {
+  color: #000000;
+  font-family: 'Lunchtype', sans-serif;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.column, .columnskillstools {
+  float: left;
+  width: 30%; /* Adjusted to fit responsive design */
+}
+
+.columnskillstools {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content Wrapper */
 .content {
   max-width: 1200px;
   margin: 0 auto;
@@ -234,13 +400,13 @@ a:visited {
 }
 
 .row {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
 }
 
-
+/* Float Right */
 .float-right {
   float: right;
   margin: 10px;
@@ -248,42 +414,18 @@ a:visited {
   height: auto;
 }
 
+/* Animation Styles */
+@keyframes wiggle {
+  0% { transform: scale(1.0) translateY(0px) rotate(0deg); }
+  20% { transform: scale(1.0) translateY(-2px) rotate(-3deg); }
+  40% { transform: scale(1.1) translateY(-2px) rotate(3deg); }
+  60% { transform: scale(1.0) translateY(2px) rotate(-3deg); }
+  80% { transform: scale(0.95) translateY(-2px) rotate(3deg); }
+  100% { transform: scale(1.0) translateY(0px) rotate(0deg); }
+}
 
-  w{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400; /* Adjust the weight according to your preference */
-    font-style: normal;
-    color: rgb(0, 0, 0);
-  }
-
-  w span {
-    display:inline-block;
-    animation: wiggle 2s ease-in;
-    animation-delay: calc(var(--animation-order) * 700ms);
-    transform-origin: center;
-    animation-timing-function: ease-in-out;
-  }
-  
-  
-  @keyframes wiggle {
-    0% {
-      transform: scale(1.0) translateY(0px) rotate(0deg);
-    }
-    20%{
-      transform: scale(1.0) translateY(-2px) rotate(-3deg);
-    }
-    40%{
-      transform: scale(1.1) translateY(-2px) rotate(3deg);
-    }
-    60%{
-      transform: scale(1.0) translateY(2px) rotate(-3deg);
-    }
-    80%{
-      transform: scale(0.95) translateY(-2px) rotate(3deg);
-    }
-    100% {
-      transform: scale(1.0) translateY(0px) rotate(0deg);
-    }
-  }
-  
-  
+.w span {
+  display: inline-block;
+  animation: wiggle 2s ease-in-out;
+  animation-delay: calc(var(--animation-order) * 700ms);
+}
