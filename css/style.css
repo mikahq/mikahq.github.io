@@ -75,7 +75,8 @@ body {
   justify-content: center;
   align-items: center;
   max-width: 100%;
-  background-image: url("../images/gradientbg.png");
+  background-color:#ffffff;
+  /* background-image: url("../images/gradientbg.png") */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -84,10 +85,11 @@ body {
 
 /* Header Styles */
 .logo h1 {
-  font-size: 60vh;
+  font-size: 16vw;
   font-weight: 700;
-  margin: 0;
   max-width: 100%;
+  background-size: cover;
+  height: auto;
 }
 
 /* Section Styles */
@@ -258,26 +260,6 @@ a:hover {
   margin: 2%;
 }
 
-/* Logo Styles */
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
-  background-image: url("../images/gradientbg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh; /* Full viewport height */
-}
-
-/* Header Styles */
-.logo h1 {
-  font-size: 110px;
-  font-weight: 700;
-  margin: 0;
-  max-width: 100%;
-}
 
 /* Section Styles */
 .section {
