@@ -28,7 +28,7 @@
   .nav {
     padding: 1%; /* Reduce padding for small screens */
     flex-direction: column; /* Stack nav items vertically if needed */
-    gap: 10px; /* Add gap between items */
+    gap: 10px; 
   }
 }
 
@@ -48,8 +48,8 @@ by Antoine Sigur*/
 }
 
 ::selection {
-  /* background: rgb(8, 1, 208);  */
-  color: rgb(2, 103, 255);
+  background: rgb(22, 45, 255); 
+  color: rgb(255, 241, 219);
   border-radius: 10px; 
 }
 
@@ -71,14 +71,15 @@ body {
 /* Logo Styles */
 .logo {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content:flex;
+  align-items: left;
   max-width: 100%;
   background-color:#ffffff;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 5%;
+  padding: 2%;
+  margin:2%
  
 }
 
@@ -86,10 +87,38 @@ body {
 .logo h1 {
   font-size: 16vw;
   font-weight: 700;
-  max-width: 100%;
   background-size: cover;
   height: auto;
 }
+/* cursor and animation found online coded by Frank Eno: https://codepen.io/frankeno/pen/QWmmxQb */
+/* Cursor */
+.cursor{
+
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-size: 30px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);    
+}
+
+/* Animation */
+.typewriter-animation {
+animation: 
+  typewriter 5s steps(50) 1s 1 normal both, 
+  blinkingCursor 500ms steps(50) 5s;
+}
+@keyframes typewriter {
+from { width: 0; }
+to { width: 43%; }
+}
+@keyframes blinkingCursor{
+from { border-right-color: rgba(0, 0, 0, 0.75); }
+to { border-right-color: transparent; }
+}
+
 
 /* Section Styles */
 .section {
@@ -102,10 +131,17 @@ body {
 /* Navigation Styles */
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   width: 100%;
+  font-size: 30px;
 }
 
+.return {
+  display: flex;
+  text-align: left;
+  width: 100%;
+  font-size: 30px;
+}
 /* Header Font Styles */
 h1, h2, h3, h4, h5, p {
   font-family: 'Applegaramond', sans-serif;
@@ -149,7 +185,7 @@ h4 {
 
 h5 {
   font-weight: 300;
-  font-size: 30px;
+  font-size: 20px;
   text-align: right;
 }
 
@@ -172,6 +208,7 @@ a:hover {
 .responsive, .rounded-image {
   max-width: 100%;
   height: auto;
+  margin: 2%;
 }
 
 .oval {
