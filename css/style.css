@@ -47,6 +47,14 @@ by Antoine Sigur*/
   /* https://www.dafont.com/apple-garamond.font Font is Apple Garamond */
 }
 
+/* @font-face {
+  font-family: 'Saint Regular';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Saint\ Regular.ttf') format('truetype');
+  /* https://www.dafont.com/apple-garamond.font Font is Apple Garamond */
+/* } */ 
+
 ::selection {
   background: rgb(22, 45, 255); 
   color: rgb(255, 241, 219);
@@ -124,8 +132,8 @@ h1, h2, h3, h4, h5, p {
 }
 
 h1 {
-  font-family: 'Lunchtype', sans-serif;
-  font-weight: 600;
+  font-family: 'Applegaramond', sans-serif;
+  font-weight: 400;
   font-size: 40px;
 }
 
