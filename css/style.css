@@ -30,6 +30,13 @@
     flex-direction: column; /* Stack nav items vertically if needed */
     gap: 10px; 
   }
+  
+}
+
+::selection {
+  background: rgb(22, 45, 255); 
+  color: rgb(255, 241, 219);
+  border-radius: 10px; 
 }
 
 @font-face {
@@ -73,7 +80,7 @@ body {
 /* Image Styles */
 .rounded-image {
   border-radius: 10%; 
-  object-fit: cover; 
+  object-fit: contain; 
   margin: 0; 
 }
 

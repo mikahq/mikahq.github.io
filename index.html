@@ -6,93 +6,113 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="favicon.ico" rel="icon" type="image/png">
   <title>Mikah</title>
+  <style>
+    .rounded-tag {
+      display: inline-block;
+      background-color: rgb(22, 45, 255); /* Change this to your preferred color */
+      border-radius: 15px; /* Adjust the radius for more or less rounding */
+      padding: 5px 10px; /* Adjust padding as needed */
+      margin: 2px; /* Optional spacing */
+      font-size: 0.9em; /* Adjust the text size as needed */
+      color: rgb(255, 241, 219); /* Set text color to white */
+    }
 
+    .project {
+      position: relative; /* Set position to relative for the pseudo-element */
+      padding: 15px; /* Inner padding */
+      margin: 20px 0; /* Spacing between projects */
+      transition: background-color 0.3s; /* Smooth background change */
+    }
+
+    .project:hover {
+      background-color: rgba(0, 0, 0, 0.05); /* Background on hover */
+      cursor: pointer; /* Pointer cursor */
+    }
+
+    .project::after {
+      content: '';
+      display: block;
+      width: 100%; 
+      height: 1px; 
+      background-color: #000000; 
+      position: absolute; 
+      left: 0;
+      bottom: 0; 
+      z-index: -1; 
+    }
+  </style>
 </head>
 <body>
 
   <div class="logo">
-    
-    <h1> Mikah Nelson
-    </h1>
-
-    <p> A user experience researcher looking at projects through a cognitive/developmental/media science lens. Currently a Masters student
-      learning new things. 
-      <br>   <br> 
-      You can find me on <span class="oval"><span class="oval-text"> 
-        
-        <a href="https://www.linkedin.com/in/mikahnel/">LinkedIn*</a></span></span> or reach me at my 
-        <span class="oval"><span class="oval-text"><a href= "mailto: mikah@berkeley.edu"> eMail*</a></span></span>
-      
+    <h1>Mikah Nelson</h1>
+    <p>A user experience researcher looking at projects through a cognitive/developmental/media science lens. 
+      Currently learning some new things at UC Berkeley.
+      <br><br> 
+      Let's work together! Reach me at my 
+      <span class="oval"><span class="oval-text"><a href="mailto:mikah@berkeley.edu"> eMail</a></span></span> or find me on
+       <span class="oval"><span class="oval-text"> 
+        <a href="https://www.linkedin.com/in/mikahnel/">LinkedIn</a></span></span>.
     </p>
-    <p> </p>
-    
   </div>
-
-
-
 
   <div class="section">
     <div class="nav">
-    
       <a href="index.html">WORK (scroll down)</a> 
-
       <a href="pages/about.html">ABOUT (me)</a> 
-  
-  </div>
-  </div>
-       <p>projects </p>
-        <h2><a href="/pages/spatialcog.html"> *~ The Spatial Thinking Lab </a>
-          <p> [Research, data analysis] I acted as an experimenter and researcher studying spatial cognition in Virtual Reality. If you like hiking or exploring, read on...
-            (and if you don't, keep reading anyways :) </p>
-        </h2> 
-        
-       
-        <h2><a href="/pages/sbcreative.html"> ! Are college students productive when their peers are watching?  </a>
-          <p> [Research, design] Rethinking productivity and adding the element of social accountability for college students </p></h2> 
-        
-        <h2><a href="/pages/mediapsychology.html"> *~ Spatial Communication in Virtual! Team Environments </a>
-          <p> [Research, qualitative data analysis] Media has taken the world by storm, and video games are no exception. I designed a study to ask how communication
-            is created and flexibly adapts in audio-based, competitive team environments.
-          </p>
-        </h2>  
-        
-     
-        <h2><a href="/pages/scd.html"> *~  Children's views of the social world.</a>
-          <p> [Research, data analysis] Researching how children see the world from the ground up. 
-            How do we ask Big Social Questions to children? Seeing what happens if we talk about concepts like free will and biracial identity</p>
-        </h2> 
-      
-        <h3> 
-          <a href = "/pages/montyhallproblem.html"> ~ The Monty Hall Problem or an Agent-based modeling simulation </a>
-          <p> [Simulation, data visualization] A demonstration of an agent based model system in R </p>
-         </h3>
-      
-          
-        
     </div>
+  </div>
 
+  <div class="project" onclick="window.location.href='/pages/spatialcog.html'">
+    <h2>Spatial Experiences: What activities aid our navigation skills?</h2>
+    <p><span class="rounded-tag">Research</span> <span class="rounded-tag">Data Analysis</span></p>
+    <p>Acted as an experimenter and researcher studying spatial cognition in Virtual Reality. If you like hiking or exploring, read on...
+    (and if you don't, keep reading anyways :) </p>
+  </div>
 
+  <div class="project" onclick="window.location.href='/pages/sbcreative.html'">
+    <h2>Are college students productive when their peers are watching?</h2>
+    <p><span class="rounded-tag">Design</span> <span class="rounded-tag">Research</span></p>
+    <p>Rethinking productivity and adding the element of social accountability for college students.</p>
+  </div>
 
+  <div class="project" onclick="window.location.href='/pages/mediapsychology.html'">
+    <h2>Spatial communication in Virtual! team environments</h2>
+    <p><span class="rounded-tag">Research</span> <span class="rounded-tag">Qualitative Data Analysis</span></p>
+    <p>Media has taken the world by storm, and video games are no exception. I designed a study to ask how communication
+      is created and flexibly adapts in audio-based, competitive team environments.
+    </p>
+  </div>
 
-<script>
-function wiggleWitIt() {
-     wiggles = document.getElementsByTagName("w");
-  
-    [...wiggles].forEach((wiggle) => {
-      wiggle.innerHTML = wiggle
-        .innerText
-        .split("")
-        .map((char, index) => {
-          return `<span style='--animation-order: ${index + 1};'>${char}</span>`;
-        })
-        .join("");
-    });
-};
+  <div class="project" onclick="window.location.href='/pages/scd.html'">
+    <h2>Children's views of the social world</h2>
+    <p><span class="rounded-tag">Research</span> <span class="rounded-tag">Data Analysis</span></p>
+    <p>Researching how children see the world from sitting to standing. 
+      How do we ask Big Social Questions to children? Seeing what happens if we talk about concepts like free will and biracial identity.</p>
+  </div>
 
-document.addEventListener("DOMContentLoaded", wiggleWitIt());
+  <div class="project" onclick="window.location.href='/pages/montyhallproblem.html'">
+    <h2>The Monty Hall problem or an Agent-based modeling simulation</h2>
+    <p><span class="rounded-tag">Simulation</span> <span class="rounded-tag">Data Visualization</span></p>
+    <p>A demonstration of an agent-based model system in R.</p>
+  </div>
 
+  <script>
+    function wiggleWitIt() {
+      const wiggles = document.getElementsByTagName("w");
+      [...wiggles].forEach((wiggle) => {
+        wiggle.innerHTML = wiggle
+          .innerText
+          .split("")
+          .map((char, index) => {
+            return `<span style='--animation-order: ${index + 1};'>${char}</span>`;
+          })
+          .join("");
+      });
+    };
 
-</script>
+    document.addEventListener("DOMContentLoaded", wiggleWitIt());
+  </script>
 
 </body>
 </html>
