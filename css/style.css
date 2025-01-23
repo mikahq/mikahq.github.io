@@ -1,188 +1,176 @@
-/* Reset default margins and paddings */
-* {
- 
-  box-sizing: border-box;
-}
-
-/* Responsive design adjustments */
-@media (max-width: 768px) {
-  .responsive-element {
-    max-width: 100%;
-  }
-  
-  .logo {
-    height: auto; /* Adjust height for smaller screens */
-    /* padding: 0; Ensure no extra padding */
-  }
-  
-  .column, .columnskillstools {
-    width: 100%; /* Stack columns vertically on small screens */
-    max-width: 100%; /* Ensure full width usage */
-  }
-  
-  .row {
-    flex-direction: column; /* Stack items vertically in small screens */
-    align-items: center; /* Center items horizontally */
-  }
-  
-  .nav {
-    padding: 1%; /* Reduce padding for small screens */
-    flex-direction: column; /* Stack nav items vertically if needed */
-    gap: 10px; 
-  }
-  
-}
-
-::selection {
-  background: rgb(22, 45, 255); 
-  color: rgb(255, 241, 219);
-  border-radius: 10px; 
-}
-
-@font-face {
-  font-family: Louize;
-  src: url("../fonts/Louize\ Display\ trial.ttf") format("truetype");
-}
- /* https://uncut.wtf/display/hikaru-mono/ Font is HIKARU MONO
-by Antoine Sigur*/
-
-/* 
+/* Font Declaration */
 @font-face {
   font-family: 'Applegaramond';
   font-weight: normal;
   font-style: normal;
-  src: url('../fonts/AppleGaramond.ttf') format('truetype');
-  /* https://www.dafont.com/apple-garamond.font Font is Apple Garamond */
-} */
-
-/* @font-face {
-  font-family: 'Saint Regular';
-  font-weight: normal;
-  font-style: normal;
-  src: url('../fonts/Saint\ Regular.ttf') format('truetype');
-  /* https://www.dafont.com/apple-garamond.font Font is Apple Garamond */
-/* } */ 
-
-::selection {
-  background: rgb(22, 45, 255); 
-  color: rgb(255, 241, 219);
-  border-radius: 10px; 
+  src: url('../fonts/apple_garamond/AppleGaramond-Light.ttf') format('truetype');
 }
 
-
-/* General Body Styles */
+/* Global Typography */
 body {
+  margin: 2%;
+  font-family: 'Applegaramond', serif;
+  line-height: 1.6;
   background-color: #ffffff;
-  font-family: 'Applegaramond', sans-serif;
-  overflow-x: hidden; 
-}
-
-/* Image Styles */
-.rounded-image {
-  border-radius: 10%; 
-  object-fit: contain; 
-  margin: 0; 
-}
-
-
-
-/* Header Styles */
-.logo h1 {
-  font-size: 16vw;
-  font-weight: 700;
-  background-size: cover;
-  height: auto;
-}
-
-
-/* Section Styles */
-.section {
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
-  overflow: auto; /* Allow scrolling if content overflows */
-}
-
-/* Navigation Styles */
-.nav {
-  display: flex;
-  justify-content:space-between;
-  width: 100%;
-  font-size: 30px;
-}
-
-.return {
-  display: flex;
-  text-align: left;
-  width: 100%;
-  font-size: 30px;
-}
-/* Header Font Styles */
-h1, h2, h3, h4, h5,p{
-  font-family: 'Louize', sans-serif;
-  font-style: normal;
   color: #000000;
-  margin: 2%;
-
+  overflow-x: hidden;
 }
 
-h1 {
-  font-family: 'Louize', sans-serif;
+.header {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.main {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.main h2 {
+  margin-bottom: 20px;
+}
+
+img {
+  border-radius: 2%;
+}
+
+.footer {
+  /* Footer styling */
+}
+
+/* Standardized Heading Styles */
+h1, h2, h3, h4, h5 {
+  font-family: 'Applegaramond', serif;
   font-weight: 400;
-  font-size: 40px;
+  margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
-mainttitle {
-  font-family: 'Louize';
-  font-optical-sizing: 50vh;
-  font-style: normal;
-  font-size: 40px;
-  color: rgb(0, 0, 0);
-  margin: 2%;
+h1 { 
+  font-size: 80px;  /* Increased font size for h1 */
 }
 
-
-h2 {
-  font-weight: 300;
-  font-size: 40px;
+h2 { 
+  font-size: 50px;  /* Increased font size for h2 */
 }
 
-h3 {
-  font-weight: 300;
-  font-size:30px;
-  color: #464646;
+h3 { 
+  font-size: 40px;  /* Increased font size for h3 */
 }
 
-h4 {
-  font-weight: 300;
-  font-size: 20px;
+h4 { 
+  font-size: 30px;  /* Increased font size for h4 */
 }
 
-h5 {
-  font-weight: 300;
-  font-size: 20px;
+h5 { 
+  font-size: 30px;  /* Increased font size for h5 */
   text-align: right;
 }
 
 p {
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 300;
-  font-size: 25px;
+  font-size: 30px;  /* Increased font size for paragraphs */
+  margin-bottom: 1rem;
 }
 
-/* Link Styles */
-a:link, a:visited {
-  color: #000000;
-  text-decoration: none;
+ul {
+  list-style-type: disc;  /* Bullet points for list items */
+  margin-left: 20px;      /* Add indentation to the list */
+  padding-left: 20px;     /* Add padding for proper spacing */
+  line-height: 1.8;       /* Increased line height for better readability */
 }
 
-a:hover {
-  font-style: italic;
+/* Styles for List Items (li) */
+li {
+  font-size: 22px;        /* Make list items the same size as paragraphs */
+  margin-bottom: 0.8rem;  /* Space between list items */
+  line-height: 1.6;       /* Consistent line height with paragraphs */
 }
 
-/* Responsive Images and Elements */
+/* Responsive Image Styles */
 .responsive, .rounded-image {
   max-width: 100%;
   height: auto;
+  object-fit: contain;
+  border-radius: 10%;
   margin: 2%;
+}
+
+
+/* Navigation Styles */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+/* Link Styles */
+a {
+  color: #000000;
+  text-decoration: none;
+  /* transition: all 0.3s ease; */
+}
+
+a:hover {
+  color:cornflowerblue;
+}
+
+/* Selection Styles */
+::selection {
+  background: rgb(22, 45, 255);
+  color: rgb(255, 241, 219);
+  border-radius: 10px;
+}
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  border: 1px solid #f62d2d;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dotup {
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  border: 1px solid #ff0000;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dotdown {
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: 1px solid #f20000;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dotface {
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  border: 1px solid #ff0000;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  height: 5px;
+  width: 3px;
+  background-color: #001eff;
+  border-radius: 50%;
+}
+
+.eye-left {
+  left: 6px;
+  top: 8px;
+}
+
+.eye-right {
+  right: 6px;
+  top: 8px;
 }
