@@ -1,0 +1,150 @@
+
+@font-face {
+    font-family: 'La Borisette';
+    src: url('../fonts/apple_garamond/AppleGaramond-Light.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hershey';
+    src: url('../fonts/apple_garamond/Hershey-Noailles-Times-Duplex-Italic-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1{
+    font-family: 'Hershey', sans-serif;
+    font-size: 80px;
+}
+h2{
+    font-family: 'Hershey', sans-serif;
+}
+p{
+    font-family: 'Hershey', sans-serif;
+    font-size: 10px;
+}
+
+
+/*  @boem_c4 is the font owner */
+.num-1 { font-family: 'La Borisette', sans-serif; }
+.num-2 { font-family: 'La Borisette', sans-serif; }
+.num-3 { font-family: 'La Borisette', sans-serif; }
+.num-4 { font-family: 'La Borisette', sans-serif; }
+.num-5 { font-family: 'La Borisette', sans-serif; }
+.num-6 { font-family: 'La Borisette', sans-serif; }
+.num-7 { font-family: 'La Borisette', sans-serif; }
+.num-8 { font-family: 'La Borisette', sans-serif; }
+.num-9 { font-family: 'La Borisette', sans-serif; }
+.num-10 { font-family: 'La Borisette', sans-serif; }
+
+.num-11 { font-family: 'La Borisette', sans-serif; }
+.num-12 { font-family: 'La Borisette', sans-serif; }
+.num-13 { font-family: 'La Borisette', sans-serif; }
+.num-14 { font-family: 'La Borisette', sans-serif; }
+.num-15 { font-family: 'La Borisette', sans-serif; }
+.num-16 { font-family: 'La Borisette', sans-serif; }
+.num-17 { font-family: 'La Borisette', sans-serif; }
+.num-18 { font-family: 'La Borisette', sans-serif; }
+.num-19 { font-family: 'La Borisette', sans-serif; }
+.num-20 { font-family: 'La Borisette', sans-serif; }
+
+.num-21 { font-family: 'La Borisette', sans-serif; }
+.num-22 { font-family: 'La Borisette', sans-serif; }
+.num-23 { font-family: 'La Borisette', sans-serif; }
+.num-24 { font-family: 'La Borisette', sans-serif; }
+.num-25 { font-family: 'La Borisette', sans-serif; }
+.num-26 { font-family: 'La Borisette', sans-serif; }
+.num-27 { font-family: 'La Borisette', sans-serif; }
+.num-28 { font-family: 'La Borisette', sans-serif; }
+.num-29 { font-family: 'La Borisette', sans-serif; }
+.num-30 { font-family: 'La Borisette', sans-serif; }
+
+.num-31 { font-family: 'La Borisette', sans-serif; }
+.num-32 { font-family: 'La Borisette', sans-serif; }
+.num-33 { font-family: 'La Borisette', sans-serif; }
+.num-34 { font-family: 'La Borisette', sans-serif; }
+.num-35 { font-family: 'La Borisette', sans-serif; }
+.num-36 { font-family: 'La Borisette', sans-serif; }
+.num-37 { font-family: 'La Borisette', sans-serif; }
+.num-38 { font-family: 'La Borisette', sans-serif; }
+.num-39 { font-family: 'La Borisette', sans-serif; }
+.num-40 { font-family: 'La Borisette', sans-serif; }
+
+.num-41 { font-family: 'La Borisette', sans-serif; }
+.num-42 { font-family: 'La Borisette', sans-serif; }
+.num-43 { font-family: 'La Borisette', sans-serif; }
+.num-44 { font-family: 'La Borisette', sans-serif; }
+.num-45 { font-family: 'La Borisette', sans-serif; }
+.num-46 { font-family: 'La Borisette', sans-serif; }
+.num-47 { font-family: 'La Borisette', sans-serif; }
+.num-48 { font-family: 'La Borisette', sans-serif; }
+.num-49 { font-family: 'La Borisette', sans-serif; }
+.num-50 { font-family: 'La Borisette', sans-serif; }
+
+.num-51 { font-family: 'La Borisette', sans-serif; }
+.num-52 { font-family: 'La Borisette', sans-serif; }
+.num-53 { font-family: 'La Borisette', sans-serif; }
+.num-54 { font-family: 'La Borisette', sans-serif; }
+.num-55 { font-family: 'La Borisette', sans-serif; }
+.num-56 { font-family: 'La Borisette', sans-serif; }
+.num-57 { font-family: 'La Borisette', sans-serif; }
+.num-58 { font-family: 'La Borisette', sans-serif; }
+.num-59 { font-family: 'La Borisette', sans-serif; }
+.num-60 { font-family: 'La Borisette', sans-serif; }
+
+.num-61 { font-family: 'La Borisette', sans-serif; }
+.num-62 { font-family: 'La Borisette', sans-serif; }
+.num-63 { font-family: 'La Borisette', sans-serif; }
+.num-64 { font-family: 'La Borisette', sans-serif; }
+.num-65 { font-family: 'La Borisette', sans-serif; }
+
+
+
+/* Optional: Add some basic styling */
+.number-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); /* Creates flexible columns */
+    gap: 10px;
+    justify-items: center; /* Centers items horizontally */
+    align-items: center;   /* Centers items vertically */
+    font-size: 40px;
+    line-height: 1.5;
+}
+
+.number-container span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;  /* Adds padding inside each box */
+    border: 2px solid black; /* Border to define the box */
+    /* border-radius: 5px; Optional: rounded corners */
+    width: 60px;  /* Set width for each box */
+    height: 60px; /* Set height for each box */
+    text-align: center;
+    transition: background-color 0.3s ease; 
+}
+
+.number-container span {
+    padding: 5px
+}
+
+.hover-text-display {
+    font-size: 18px; /* Adjust font size if needed */
+    font-weight: bold;
+    margin-bottom: 20px; /* Space between the hover text and number grid */
+    color: #333;
+    text-align: center;
+    max-width: 80vw; /* Restrict width to avoid overflow */
+    overflow-wrap: break-word; /* Break long words */
+    word-wrap: break-word; /* Wrap the text properly */
+    white-space: normal; /* Allow text to wrap onto multiple lines */
+    word-break: break-word; /* Break long words to prevent overflow */
+    max-height: 300px; /* Allow some space for larger text */
+    overflow-y: auto; /* Allow scrolling if the text is too long */
+    padding: 10px;
+    box-sizing: border-box; /* Ensure the padding doesn't break layout */
+    border: 1px solid #ccc; /* Add a border for clarity */
+    background-color: rgba(255, 255, 255, 0.9); /* Optional: background to make the text more readable */
+}
