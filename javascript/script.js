@@ -50,3 +50,56 @@ numberSpans.forEach(span => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+            const sidePanel = document.querySelector('.side-panel');
+            const sidePanelContent = document.querySelector('.side-panel-content');
+            const closeBtn = document.querySelector('.close-btn');
+            const clickableElements = document.querySelectorAll('.clickable-element');
+
+            // Function to open side panel
+            function openSidePanel(content) {
+                sidePanelContent.innerHTML = content;
+                sidePanel.classList.add('open');
+            }
+
+            // Function to close side panel
+            function closeSidePanel() {
+                sidePanel.classList.remove('open');
+                sidePanelContent.innerHTML = '';
+            }
+
+            // Add click event to all clickable elements
+            clickableElements.forEach(element => {
+                element.addEventListener('click', () => {
+                    // Find the full content associated with this data-text
+                    const fullContent = document.querySelector(`span[data-text="${element.getAttribute('data-text')}"]`);
+                    
+                    if (fullContent) {
+                        // If content is an image
+                        if (fullContent.querySelector('img')) {
+                            openSidePanel(fullContent.querySelector('img').outerHTML);
+                        } 
+                        // If content is text
+                        else if (fullContent.querySelector('p')) {
+                            openSidePanel(fullContent.querySelector('p').innerHTML);
+                        }
+                        // Fallback to text content
+                        else {
+                            openSidePanel(fullContent.textContent);
+                        }
+                    }
+                });
+            });
+
+            // Close button functionality
+            closeBtn.addEventListener('click', closeSidePanel);
+
+            // Close side panel when clicking outside
+            document.addEventListener('click', (event) => {
+                if (!sidePanel.contains(event.target) && 
+                    !Array.from(clickableElements).some(el => el.contains(event.target))) {
+                    closeSidePanel();
+                }
+            });
+        });
+
