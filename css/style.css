@@ -1,173 +1,231 @@
-/* Font Declaration */
-@font-face {
-  font-family: 'Applegaramond';
-  font-weight: normal;
-  font-style: normal;
-  src: url('../fonts/apple_garamond/AppleGaramond-Light.ttf') format('truetype');
+
+/* credit to this website's code: https://github.com/ctlnwng/the-unsustainable-web/blob/master/index.html */
+
+/* Variables */
+:root {
+  --c-purple: #745eff;
+  --bg-color: #ffffff;
+  --text-color: #202020;
+  --c-grey: #949494;
 }
 
-/* Global Typography */
+[data-theme="dark"] {
+  --text-color: #ffffff;
+  --bg-color: #202020;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  margin: 2%;
-  font-family: 'Applegaramond', serif;
-  line-height: 1.6;
-  background-color: #ffffff;
-  color: #000000;
-  overflow-x: hidden;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 100px 30px;
+  font-size: 18px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-.header {
-  padding-bottom: 10px;
+/* ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+} */
+
+/* li:not(:last-child) {
   margin-bottom: 20px;
-}
+} */
 
-
-.main h2 {
-  margin-bottom: 20px;
-}
-
-img {
-  border-radius: 2%;
-}
-
-.footer {
-  /* Footer styling */
-}
-
-/* Standardized Heading Styles */
-h1, h2, h3, h4, h5 {
-  font-family: 'Applegaramond', serif;
-  font-weight: 500;
-  margin-bottom: 1rem;
-  line-height: 1.2;
-}
-
-h1 { 
-  font-size: 80px;  /* Increased font size for h1 */
-}
-
-h2 { 
-  font-size: 50px;  /* Increased font size for h2 */
-}
-
-h3 { 
-  font-size: 40px;  /* Increased font size for h3 */
-}
-
-h4 { 
-  font-size: 30px;  /* Increased font size for h4 */
-}
-
-h5 { 
-  font-size: 30px;  /* Increased font size for h5 */
-  text-align: left;
-}
-
-p {
-  font-size: 25px;  /* Increased font size for paragraphs */
-  margin-bottom: 1rem;
-}
-
-ul {
-  list-style-type: disc;  /* Bullet points for list items */
-       
-  padding-left: 20px;     /* Add padding for proper spacing */
-  line-height: 1.8;       /* Increased line height for better readability */
-}
-
-/* Styles for List Items (li) */
-li {
-  font-size: 25px;  
-  margin-left: 10px;      /* Make list items the same size as paragraphs */
-  margin-bottom: 0.8rem;  /* Space between list items */
-  line-height: 1.6;       /* Consistent line height with paragraphs */
-}
-
-/* Responsive Image Styles */
-.responsive, .rounded-image {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 10%;
-  margin: 2%;
-}
-
-
-/* Navigation Styles */
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 1rem 0;
-}
-
-/* Link Styles */
 a {
-  color: #000000;
   text-decoration: none;
-  /* transition: all 0.3s ease; */
+  color: var(--c-grey);
+  transition: color 0.3s ease;
 }
 
 a:hover {
-  color:cornflowerblue;
+  color: var(--text-color);
 }
+
+section:not(:last-child) {
+  margin-bottom: 75px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+/* Light/dark mode toggle */
+
+.theme-toggle {
+  position: relative;
+}
+
+.theme-toggle__label {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Table of Contents */
+
+.title a {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--c-purple);
+  margin-bottom: 50px;
+}
+
+.toc {
+  position: relative;
+  width: 100%;
+}
+
+.toc ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toc__item {
+  padding: 5px 0;
+  font-size: 16px;
+  color: var(--c-grey);
+}
+
+.toc__item .selected {
+  color: var(--text-color);
+}
+
+/* Essay Content */
+
+.essay-content {
+  width: 100%;
+  max-width: 850px;
+  line-height: 1.4;
+}
+
+.essay-content .heading {
+  font-weight: 400;
+}
+
+.essay-content a {
+  position: relative;
+  display: inline-block;
+}
+
+.essay-content a::before {
+  content: "";
+  position: absolute;
+  top: calc(-40%);
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--c-purple-transparent);
+  z-index: -100;
+  transform: scale(0);
+}
+
+.essay-content a:hover::before {
+  /* animation: grow-circle 0.5s forwards; */
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.essay__fig {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.essay__img {
+  width: 100%;
+}
+
+.essay__img-caption {
+  font-size: 14px;
+}
+
+.essay__img-caption a::before {
+  width: 0;
+  height: 0;
+}
+
+.introduction__hook {
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.web-developers__list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.web-developers__li-heading {
+  border-bottom: 2px var(--c-purple) solid;
+}
+
+.about__heading {
+  font-weight: 400;
+}
+
+.about__heading::before {
+  content: "";
+  display: block;
+  margin: 0 auto 75px auto;
+  width: 200px;
+  height: 2px;
+  background-color: var(--text-color);
+}
+
+/* Desktop */
+
+@media (min-width: 768px) {
+  body {
+    margin: 100px 50px;
+    font-size: 24px;
+  }
+
+  .theme-toggle {
+    position: fixed;
+  }
+
+  .title a {
+    font-size: 18px;
+  }
+
+  .toc {
+    position: fixed;
+    top: 50vh;
+    transform: translateY(-50%);
+    width: 30%;
+  }
+
+  .toc__item {
+    font-size: 18px;
+  }
+
+  .essay-content {
+    width: 60%;
+    margin-left: 35%;
+  }
+
+  .essay__img-caption {
+    font-size: 18px;
+  }
+
+  .introduction__hook {
+    font-size: 48px;
+  }
+}
+
+
 
 /* Selection Styles */
 ::selection {
   background: rgb(22, 45, 255);
   color: rgb(255, 241, 219);
   border-radius: 10px;
-}
-.dot {
-  height: 25px;
-  width: 25px;
-  background-color: transparent;
-  border: 1px solid #f62d2d;
-  border-radius: 50%;
-  display: inline-block;
-}
-.dotup {
-  height: 30px;
-  width: 30px;
-  background-color: transparent;
-  border: 1px solid #ff0000;
-  border-radius: 50%;
-  display: inline-block;
-}
-.dotdown {
-  height: 20px;
-  width: 20px;
-  background-color: transparent;
-  border: 1px solid #f20000;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.dotface {
-  height: 25px;
-  width: 25px;
-  background-color: transparent;
-  border: 1px solid #ff0000;
-  border-radius: 50%;
-  display: inline-block;
-  position: relative;
-}
-
-.eye {
-  position: absolute;
-  height: 5px;
-  width: 3px;
-  background-color: #001eff;
-  border-radius: 50%;
-}
-
-.eye-left {
-  left: 6px;
-  top: 8px;
-}
-
-.eye-right {
-  right: 6px;
-  top: 8px;
 }

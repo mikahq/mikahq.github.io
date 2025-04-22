@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" type ="text/css">
   <link href="favicon.ico" rel="icon" type="image/png">
   <title>Mikah</title>
   <meta name="robots" content="noindex">
@@ -11,60 +11,68 @@
 </head>
 <body>
 
-  <div class = header> 
-  <h1> 
-    <div class="button">
-    Mikah Nelson <img src = "images/author.jpeg" alt = "photo of author" width = 150px></a>
-    is a researcher who likes learning new ways to ask questions. 
-    </h1>
+  <!-- Table of Contents -->
+  <div class="toc">
+    <h1 class="title"><a href="#"> Project, Method/Tool </a></h1>
+    <ul>
+      <li class="toc__item">
+        <a href="#infovis" class="selected"> Visualization, Tableau </a>
+      </li>
+      <li class="toc__item">
+        <a href="#bart"> BART, Qualitative method</a>
+      </li>
+      <li class="toc__item"><a href="#socdev"> Psychology, Research paper </a></li>
+      <li class="toc__item"><a href="#montyhall"> Simulation, R </a></li>
 
-  
-  <h2> 
-    Email: 
-      <div class=" dot"> 
-      <!-- <div class="eye eye-left"></div> -->
-      <div class="eye eye-right"> </div>
-    </div>
-    
-  
-    <a href="mailto:mikah@berkeley.edu"> mikah@berkeley.edu</a> </h2>
-
+    </ul>
   </div>
 
-  <div class = main> 
- <h1> Projects  <div class="dotface">
-  <div class="eye eye-left"></div>
-  <div class="eye eye-right"> </div>
-</h1>
-  <!-- <h2> <a href= "pages/spatial.html"> Everyday spatial experiences, video games, and spatial abilities </a> </h2> -->
+  <div class="essay-content">
+    <section id="introduction">
+      <p class="introduction__hook">
+    Mikah Nelson <img
+    src="images/author.jpeg"
+    alt="A photo of the author smiling. She is female and in the background is a beach."
+    width = 200px
+  />
+  is a researcher who likes learning new ways to ask questions.  <figure class="essay__fig">
+      
+   
+  </p>
 
-  <h2> <a href= "pages/info_vis.html"> Information visualization: Exploring the SF library and book rankings </a>
-    <p> <i>Tableau, Observable Plot</i></p>
+</section>
 
-  <h2> <a href= "pages/spatial.html"> Everyday spatial experiences, video games, and spatial abilities </a> 
-    <p> <i>R, Python, Science communication</i></p>
+<section id="infovis">
+  <h2 class="heading"> <a href="pages/info_vis.html"> Visualizing libraries, books, and their patrons </a> </h2>
+  <p> Data driven narrative into reading seasonality, books, and their patrons. Using Tableau and Observable Plot.</p>
+</section>
 
-  </h2>
+  <section id="bart">
+    <h2 class="heading"> <a href="pages/bart.html">A case of convenience: Bay Area Rapid Transit </a> </h2>
 
+    <p> Qualitative exploration into why Bay Area citizens both love and hate their transit.</p>
+  </section>
 
-  <h2> <a href= "pages/bart.html"> A case of convenience: Bay Area Rapid Transit </a> 
-    <p> <i>IDI, UX Research</i></p>
-  </h2>
   
-  <h2> <a href= "pages/socdev.html"> Children's judgments of dual identity individuals </a> 
-    <p> <i>R, Science communnication, Research</i></p>
-  </h2>
-  
+   <section id="socdev">
+    <h2 class="heading"> <a href="pages/socdev.html"> Children's judgments of dual identity individuals </a> </h2>
+    <p> Research that offers some solutions on why children 
+      judge dual-identity holders, such as biracial indivduals, more harshly with age.</p>
 
-  </div>
+ </section>
 
- <div class = footer>
-  <br>
-  <hr>
-  <h5>HTML/CSS brought to you with the help of the WWW. Made by Mikah. Revamped every couple of months. </h5>
+ <section id="montyhall">
+  <h2 class="heading"> <a href="pages/montyhallproblem.html"> Simulating the Monty Hall Problem </a> </h2>
+  <p> Beep boop. A simulation in R. </p>
+
+</section>
+
+<hr>
+  <p>HTML/CSS brought to you with the help of the WWW. Made by Mikah. Revamped every couple of months. </p>
  </div>
   
 </body>
+<script src="script_main.js"></script>
 
 <script data-goatcounter="https://mikah.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
