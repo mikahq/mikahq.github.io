@@ -102,6 +102,39 @@ section:not(:last-child) {
 
 /* Essay Content */
 
+.essay-content-landing {
+  width: 100%;
+  /* max-width: 850px; */
+  line-height: 1.4;
+}
+.essay-content-landing .heading {
+  font-weight: 400;
+}
+
+.essay-conten-landing a {
+  position: relative;
+  display: inline-block;
+}
+
+.essay-content-landing a::before {
+  content: "";
+  position: absolute;
+  top: calc(-40%);
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--c-purple-transparent);
+  z-index: -100;
+  transform: scale(0);
+}
+
+.essay-content-landing a:hover::before {
+  /* animation: grow-circle 0.5s forwards; */
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
 .essay-content {
   width: 100%;
   max-width: 850px;
