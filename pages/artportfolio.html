@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Basic reset */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Table of contents */
+        .toc {
+            margin: 20px;
+        }
+
+        .toc .title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .toc__item a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .toc__item a.selected {
+            font-weight: bold;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .toc__item {
+            margin: 5px 0;
+        }
+
+        /* Grid layout */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -4px; /* negative margin to counteract padding on columns */
+        }
+
+        /* Column style */
+        .column {
+            flex: 50%;
+            padding: 0 4px;
+            box-sizing: border-box;
+        }
+
+        .column img {
+            width: 100%; /* Make images responsive */
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            .column {
+                flex: 50%; /* Two images per row for tablets */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .column {
+                flex: 100%; /* One image per row for mobile devices */
+            }
+
+            .toc .title {
+                font-size: 18px;
+            }
+
+            .toc__item a {
+                font-size: 14px;
+            }
+        }
+    </style>
+
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <!-- Table of Contents -->
+    <div class="toc">
+        <ul>
+            <li class="toc__item">
+        <center>
+        <h1> Mikah Nelson</h1>
+        <p> Digital and traditional art</p>
+        </center>
+            </li>
+            
+           
+        </ul>
+                <!-- <img src="../images/art_portfolio/goldfishes.png" alt="Goldfish Art" width = 10%>  -->
+
+    </div>
+
+    <!-- Essay content (art images) -->
+    <div class="essay-content">
+                <section id="drawings">
+
+
+        <div class="row">
+            <div class="column">
+                <img src="../images/art_portfolio/IMG_8363.png" alt="Art 2">
+
+                <img src="../images/art_portfolio/IMG_0021.PNG" alt="Art 1">
+                <img src="../images/art_portfolio/mikah-nelson-ginkos.jpg" alt="Ginkos">
+
+                <img src="../images/art_portfolio/tomato_pearl_rings.jpg" alt="Tomato Pearl Rings">
+                <img src="../images/art_portfolio/RNI-Films-IMG-08C65088-7C1B-4F87-91B3-A37EDA19D699.JPG" alt="Tomato Pearl Rings">
+
+                               
+
+            </div>
+           
+            <div class="column">
+
+                 <img src="../images/art_portfolio/surfers.jpg" alt="Surfers">
+                 
+                <img src="../images/art_portfolio/Sf.png" alt="San Francisco">
+                
+                <img src="../images/art_portfolio/chineselion.jpg" alt="Chinese Lion">
+                <img src="../images/art_portfolio/A54B6E78-4DAC-40E3-B70C-89C0B5B6F7C7.jpg" alt="Mikah Four">
+
+                <!-- <img src="../images/art_portfolio/borzoi.jpg2_Original.jpg" alt="Borzoi"> -->
+                <img src="../images/art_portfolio/mikah-four.jpg" alt="Mikah Four">
+
+
+            </div>
+        </div>
+
+        
+    </div>
+</section>
+
+</body>
+</html>
