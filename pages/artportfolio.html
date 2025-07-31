@@ -3,144 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* Basic reset */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-        }
+    <link href="/css/style.css" rel="stylesheet">
 
-        /* Table of contents */
-        .toc {
-            margin: 20px;
-        }
-
-        .toc .title {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        .toc__item a {
-            text-decoration: none;
-            color: #000;
-        }
-
-        .toc__item a.selected {
-            font-weight: bold;
-        }
-
-        .toc ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .toc__item {
-            margin: 5px 0;
-        }
-
-        /* Grid layout */
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            margin: 0 -4px; /* negative margin to counteract padding on columns */
-        }
-
-        /* Column style */
-        .column {
-            flex: 50%;
-            padding: 0 4px;
-            box-sizing: border-box;
-        }
-
-        .column img {
-            width: 100%; /* Make images responsive */
-            margin-bottom: 8px;
-            display: block;
-        }
-
-        /* Media Queries for responsiveness */
-        @media (max-width: 768px) {
-            .column {
-                flex: 50%; /* Two images per row for tablets */
-            }
-        }
-
-        @media (max-width: 480px) {
-            .column {
-                flex: 100%; /* One image per row for mobile devices */
-            }
-
-            .toc .title {
-                font-size: 18px;
-            }
-
-            .toc__item a {
-                font-size: 14px;
-            }
-        }
-    </style>
-
-    <title>Portfolio</title>
+    <title>Creativity</title>
 </head>
 <body>
-
-    <!-- Table of Contents -->
-    <div class="toc">
-        <ul>
-            <li class="toc__item">
-        <center>
-        <h1> Mikah Nelson</h1>
-        <p> Digital and traditional art</p>
-        </center>
-            </li>
-            
-           
-        </ul>
-                <!-- <img src="../images/art_portfolio/goldfishes.png" alt="Goldfish Art" width = 10%>  -->
-
-    </div>
-
-    <!-- Essay content (art images) -->
-    <div class="essay-content">
-                <section id="drawings">
-
-
-        <div class="row">
-            <div class="column">
-                <img src="../images/art_portfolio/IMG_8363.png" alt="Art 2">
-
-                <img src="../images/art_portfolio/IMG_0021.PNG" alt="Art 1">
-                <img src="../images/art_portfolio/forgetmenot.png" alt="Art 2">
-               
-                <img src="../images/art_portfolio/mikah-nelson-ginkos.jpg" alt="Ginkos">
-
-                <img src="../images/art_portfolio/tomato_pearl_rings.jpg" alt="Tomato Pearl Rings">
-
-                               
-
-            </div>
-           
-            <div class="column">
-
-                 <img src="../images/art_portfolio/surfers.jpg" alt="Surfers">
-                 
-                <img src="../images/art_portfolio/Sf.png" alt="San Francisco">
-                
-                <img src="../images/art_portfolio/chineselion.jpg" alt="Chinese Lion">
-                <img src="../images/art_portfolio/A54B6E78-4DAC-40E3-B70C-89C0B5B6F7C7.jpg" alt="Mikah Four">
-
-                <!-- <img src="../images/art_portfolio/borzoi.jpg2_Original.jpg" alt="Borzoi"> -->
-                <img src="../images/art_portfolio/mikah-four.jpg" alt="Mikah Four">
-                <img src="../images/art_portfolio/RNI-Films-IMG-08C65088-7C1B-4F87-91B3-A37EDA19D699.JPG" alt="Tomato Pearl Rings">
-
-
-            </div>
-        </div>
-
+    <p> <a href="/index.html"> Return </a></p>
+  
         
-    </div>
-</section>
+   <!-- Table of Contents -->
+   <div class="toc">
+    <h1 class="title"><a href="#"> Creating and designing in the Internet age</a></h1>
+    <ul>
+      <li class="toc__item">
+        <a href="#webdesign" class="selected"> Web Design</a>
+      </li>
+    
+      <li class="toc__item"><a href="#illustration"> Illustration </a></li>
+      <li class="toc__item">
+        <a href="#design"> Design journey </a>
+      </li>
+
+
+    </ul>
+  </div>
+   <!-- Essay -->
+   <div class="essay-content">
+    <section id="introduction">
+      <p class="introduction__hook">
+        Creating and designing in the Internet age
+      </p>
+      
+    </section>
+
+
+    <section id="webdesign">
+      <h2 class = "heading"> Web Design</h2>
+        <p>
+            I work in HTML/CSS and some Javascript. I'm inspired by Neocities designs, modern, clean layouts
+            and a lightweight web. I use VS Code and Figma!
+        </p>
+
+         <h3 class = "heading"> Ivory/Tusk Trade website </h3>
+
+        <p>
+            A website to show the impacts of the ivory/tusk trade and what the average consumer can do to 
+            change it.
+        </p>
+        <video width="100%" height="100%" controls>
+        <source src="../images/rhino_website.mp4" type="video/mp4" alt="Book Club website">
+        Your browser does not support the video tag.
+        </video>
+        
+         <h3 class = "heading"> Book Club website </h3>
+      <p> 
+        My friends and I made a book club. Each month someone else picks a pick and we vote on the 3-4 options. I created 
+        a site to show our previous reads.
+        <video width="100%" height="100%" controls>
+        <source src="../images/art_portfolio/bookclubmovie.mp4" type="video/mp4" alt="Book Club website">
+        Your browser does not support the video tag.
+        </video>
+        </p>
+           
+        
+    </section>
+
+
+     <section id="illustration">
+
+     <h2 class = "heading"> Selected Illustrations</h2>
+      <figure class="essay__fig">
+                    <img
+                    class="essay__img"
+                    src="/images/art_portfolio/snow.jpg"
+                    alt="Snowfall with person"
+                />
+                <figcaption class="essay__img-caption">
+                    Snowfall in Tahoe.
+                    </figcaption>
+
+        </figure>
+        <figure class="essay__fig">
+                    <img
+                    class="essay__img"
+                    src="/images/art_portfolio/IMG_8363.png"
+                    alt="The Golden Gate Park"
+                />
+                <figcaption class="essay__img-caption">
+                    Golden Gate Park lake
+                    </figcaption>
+
+        </figure>
+        <figure class="essay__fig">
+                    <img
+                    class="essay__img"
+                    src="/images/art_portfolio/greenhouse.jpg"
+                    alt="Greenhouse"
+                />
+                <figcaption class="essay__img-caption">
+                    Commision of a greenhouse for a lovely home.
+                    </figcaption>
+
+        </figure>
+         <figure class="essay__fig">
+                    <img
+                    class="essay__img"
+                    src="/images/art_portfolio/ginkos.png"
+                    alt="Bottles and some ginko leaves on wood floor."
+                />
+                <figcaption class="essay__img-caption">
+                    Published in local magazine.
+                    </figcaption>
+
+        </figure>
+        
+       
+
+        <figure class="essay__fig">
+                    <img
+                    class="essay__img"
+                    src="/images/art_portfolio/mikah-four.jpg"
+                    alt="The Golden Gate Park"
+                />
+                <figcaption class="essay__img-caption">
+                    Two bottles, in gouache and scanned.
+                    </figcaption>
+
+        </figure>
+
+     </section>
+     <section id="design">
+
+        <h2 class = "heading"> Design journey</h2>
+        <p> I am well-versed in traditional art, like painting. <h5> (Acrylic, gouache, watercolor, oils, oil pastels, 
+            crayons, colored pencils... should I go on?)</h5>
+            <figure class="essay__fig">
+            <img
+            class="essay__img"
+            src="/images/art_portfolio/chineselion.jpg"
+            alt="A image of library patron communication trends in the San Francisco Library contact methods. There are 2 line charts and one bar chart depicting age."
+          />
+          <figcaption class="essay__img-caption">
+           Female Chinese lion.
+          </figcaption>
+          </figure>
+          </p>
+            <p> 
+                Around high school I was given a Huion tablet, which taught me the commands for creating digital art.
+                 I've since traded it in for Procreate and Glyphs to make 
+                digital art and learn about typography.
+
+                <figure class="essay__fig">
+                    <img
+                    class="essay__img"
+                    src="/images/art_portfolio/Sf.png"
+                    alt="The Painted Ladies in San Francisco"
+                />
+                <figcaption class="essay__img-caption">
+                    The Painted Ladies, buildings in San Francisco
+                    </figcaption>
+
+            </figure>
+            <figure class="essay__fig">
+            <img
+            class="essay__img"
+            src="/images/glyphs_example.png"
+            alt="Experimenting with Glyphs and typography."
+          />
+          <figcaption class="essay__img-caption">
+            Experimenting with Glyphs and typography.
+            </figcaption>
+
+            </figure>
+            </p>
+        <p>
+            I also do some short animations, handdrawn.
+            <figure class="essay__fig">
+            <video width="100%" height="100%" controls>
+        <source src="../images/art_portfolio/Crow.mp4" type="video/mp4" alt="Book Club website">
+        Your browser does not support the video tag.
+        </video>
+
+            </figure>
+
+        On the more coporate side, I've picked up some marketing skills and use my design background for those kinds of projects.
+        But I think my heart is really in handdrawn design!
+        </p>
+            
+      
+    </section>
+
+    <section id="designphilosophy">
+
+        <h2 class = "heading"> Visuals: the intersection of design, drawing, and marketing
+
+        </h2>
+
+        <p>  
+        
+            <figure class="essay__fig">
+            <img
+            class="essay__img"
+            src="/images/Screenshot 2025-07-30 at 12.37.31 PM.png"
+            alt="A image of a venn diagram about marketing and design intersecting."
+          />
+          <figcaption class="essay__img-caption">
+            A image of a venn diagram about marketing and design intersecting.
+          </figcaption>
+        </figure>
+        </p>
+
+    </section>
+
+   
+
+    
+    
+
 
 </body>
 </html>
+
+

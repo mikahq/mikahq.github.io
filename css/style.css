@@ -6,7 +6,7 @@
   --c-purple: #000be4;
   --bg-color: #ffffff;
   --text-color: #202020;
-  --c-grey: #949494;
+  --c-grey: #0037ff;
 }
 
 [data-theme="dark"] {
@@ -16,6 +16,8 @@
 
 html {
   scroll-behavior: smooth;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 body {
@@ -25,17 +27,11 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: color 0.3s ease, background-color 0.3s ease;
+  
+
 }
 
-/* ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-} */
 
-/* li:not(:last-child) {
-  margin-bottom: 20px;
-} */
 
 a {
   text-decoration: none;
@@ -261,4 +257,70 @@ section:not(:last-child) {
   background: rgb(22, 45, 255);
   color: rgb(255, 241, 219);
   border-radius: 10px;
+}
+
+summary {
+  position: relative;
+  padding-left: 1.5em; /* Add space for the icon */
+}
+
+summary::marker {
+  content: none;
+}
+
+summary::before,
+summary::after {
+  content: '';
+}
+
+summary::before,
+summary::after {
+  width: 1.5em; /* Make the width bigger */
+  height: 0;
+  border-bottom: 2px solid;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%); /* Center the icon vertically */
+}
+
+summary::after {
+  transform: rotate(90deg); /* Default for collapsed state (like +) */
+  transform-origin: 50% 50%;
+}
+
+[open] summary::after {
+  transform: rotate(0deg); /* When open, rotate to - (like minus) */
+}
+
+/* styles ported over from the second example */
+@layer step2styles {
+  details {
+    border-bottom: 1px solid;
+    padding: 0 1rem;
+    background: white;
+  }
+
+  details + details {
+    border-top: none;
+  }
+
+  details[open] {
+    padding-bottom: 1em;
+  }
+
+  summary {
+    padding: 1rem 2em 1rem 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+
+footer {
+  color: rgb(0, 0, 0);
+  text-align: left;
+  padding: 20px;
+  font-size: 16px;
 }
