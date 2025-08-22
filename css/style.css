@@ -203,7 +203,7 @@ body {
   padding-left: 2%;
   padding-right: 2%;
   
-  font-size: 2vh;
+  font-size: 16px;
   line-height: 1.5;
   background-color: var(--flexoki-paper);
   color: var(--flexoki-black);
@@ -490,7 +490,7 @@ section:not(:last-child) {
   /* Approx 768px, but using em for more scalable breakpoints */
   body {
     margin: 10vh 5vw;
-    font-size: 1.25vw; /* scales with viewport width */
+    /* font-size: 1.25vw; scales with viewport width */
   }
 
   .theme-toggle {
@@ -521,9 +521,9 @@ section:not(:last-child) {
     font-size: 1vw;
   }
 
-  .introduction__hook {
+  /* .introduction__hook {
     font-size: 4vw;
-  }
+  } */
 
   footer {
     font-size: 1vw;
