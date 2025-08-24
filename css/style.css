@@ -175,6 +175,8 @@
 
 
 
+
+
 html {
   scroll-behavior: smooth;
   padding: 0;
@@ -203,7 +205,7 @@ body {
   padding-left: 2%;
   padding-right: 2%;
   
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
   background-color: var(--flexoki-paper);
   color: var(--flexoki-black);
@@ -332,11 +334,11 @@ section:not(:last-child) {
 }
 
 
-.essay-content {
+/* .essay-content {
   width: 100%;
-  max-width: 60%;
+  max-width: 90%;
   line-height: 1.4;
-}
+} */
 
 .essay-content .heading {
   font-weight: 400;
@@ -382,7 +384,7 @@ section:not(:last-child) {
 
 .introduction__hook {
   font-family: "Baskervville";
-  font-size: 5vh;
+  font-size: 7vh;
   font-weight: 500;
 }
 
@@ -406,6 +408,7 @@ section:not(:last-child) {
   height: 2px;
   background-color: var(--text-color);
 }
+
 
 /* Mobile-first responsiveness (screens less than 768px wide) */
 @media (max-width: 767px) {
@@ -505,7 +508,7 @@ section:not(:last-child) {
     position: fixed;
     top: 50vh;
     transform: translateY(-50%);
-    width: 30%;
+    width: 20%;
   }
 
   .toc__item {
@@ -513,8 +516,8 @@ section:not(:last-child) {
   }
 
   .essay-content {
-    width: 60%;
-    margin-left: 35%;
+    width: 75%;
+    margin-left: 25%;
   }
 
   .essay__img-caption {
@@ -543,5 +546,5 @@ footer {
   color: var(--flexoki-b);
   text-align: left;
   
-  font-size: 16px;
+  font-size: 12px;
 }

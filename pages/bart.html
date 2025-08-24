@@ -53,6 +53,7 @@
           My BART card redesign.
         </figcaption>
       </figure> 
+      <span data-tooltip="Tooltip text here">Hover me</span>
         <p>
           The Bay Area Rapid Transit (BART) is a historic “heavy-rail public transit system” starting service in 1972. It acts as an essential public transit service for a wide variety of Bay Area citizens and creates social and bureaucratic discourse in its function. 
           <p>
@@ -124,7 +125,7 @@ Participant feelings of loyalty and worth, suggest there could be a pattern of d
     
 
     <section id="methodology">
-      <h2 class = "heading">Methodology</h2>
+      <h2 class = "heading"> Methodology</h2>
         <p>Participants represented people who lived in the Bay Area in the last year or more, and used the BART at least once a month.
           I used a mix of the following qualitative research methods to gather data.</p>
         <ul>
@@ -153,22 +154,29 @@ Participant feelings of loyalty and worth, suggest there could be a pattern of d
     <section id="scope">
       <h2 class = "heading"> Scope </h2>
       <p> What this project is, and what it isn't.</p>
-      <h2> It is: </h2>
+      <h2 class = "heading"> It is: </h2>
       <p> a brief qualitative overview of how Bay Area riders feel about the current state of BART in 2024.</p>
-      <h2> What it is not: </h2>
+      <h2 class = "heading"> What it is not: </h2>
       <p> Questions could have been more narrowly tailored about actionable items to improve BART from the participants. </p>
       <p> More IDIs representing different BART riders based on frequency of use, or attitudinal/behavioral attributes would have
         made the study more robust.
       </p>
 
-      <h2> What is left: </h2>
+      <h2 class = "heading"> What is left: </h2>
       <p> Many things. Among them are, how do the needs of BART riders geninuely impact their habits? Who used to ride BART, but doesn't now, and why? Who started to use
         BART after COVID? Why? Who does BART aim to serve, and who are they serving now?
       </p>
 
     </section>
     
-
+<script src="../src/lib/tooltip.js"></script>
+	<script>
+		// Select all elements with a tooltip
+		document.querySelectorAll('[data-tooltip]').forEach(el => {
+			const content = el.getAttribute('data-tooltip');
+			applyTooltip(el, content);
+		});
+	</script>
 
 </body>
 </html>
