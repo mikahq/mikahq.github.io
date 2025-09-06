@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet">
+
+    <title>Metro</title>
+</head>
+<body>
+    <p> <a href="/index.html"> Return </a></p>
+
+         <!-- Table of Contents -->
+  <div class="toc">
+    <h1 class="title"><a href="#"> NY Metro Art Data </a></h1>
+    <ul>
+        <li class="toc__item"><a href="#materials"> Materials </a></li>    
+        <li class="toc__item"><a href="#methodology"> Method </a></li>      
+    </ul>
+  </div>
+
+  <!-- Essay -->
+  <div class="essay-content">
+    <section id="introduction">
+      <p class="introduction__hook">
+        Withstanding the test of time: Metro art of New York
+      </p>
+      
+
+    <section id="goals">
+        <h2 class = "heading"> 
+          The "walkable" city of America. 
+           </h2>
+        <p> When I went there this 
+          summer, I was transfixed by the artwork on the walls. Whether it was mosaics or posters mounted in the subway car, 
+          this artwork is seen by millions of locals and tourists while it's on display. When I found a data source from the New York
+          MTA titled "Permanent Art Catalog: Beginning 1980", I knew instantly that I wanted to try and dig deeper into what they
+          recorded.
+        </p>
+           <figure class="essay__fig">
+        <img
+        class="essay__img"
+        src="/images/parrot.png"
+        alt="A image of a mosiac parrot couple."
+      />
+      <figcaption class="essay__img-caption">
+        A blurry admiration of the parrots on the metro wall.
+      </figcaption>
+    </figure>
+
+        <section id="materials"> 
+        <h2 class="heading">
+            Durable materials
+        </h2>
+
+         <p> Artists were allowed to create their pieces in whatever medium they chose. For example, it was not uncommon for descriptions like
+            "Bonded Bronze, Metalized liquid - resin and fiberglass" to appear in the dataset. In order to understand 
+            which materials actually appeared most frequently, I added up the times each word was mentioned. 
+        </p>
+        
+        <figure class="essay__fig">
+            <h3 class = "heading"> 
+            
+            Most common materials used in NY Metro artwork (1980-2023)
+        </h3>
+            <img
+                class="essay__img"
+                src="/images/art_materials.png"
+                alt="A image of a mosiac parrot couple."
+            />
+            <figcaption class="essay__img-caption">
+                A spider chart of the most common materials 
+                mentioned by artists in their artwork from 1980-2023.
+            </figcaption>
+        </figure>
+
+        <p>
+            Durable materials like glass, stainless steel, and aluminum show up uniquely in these art pieces, many of which needed
+            to withstand outside weather. These were pieces made with consideration and for longevity. 
+         </p>
+
+    </section>
+
+    <h2 class = "heading"> 
+           Emotional art titles
+        </h2>
+        <p> 
+        Since I wasn't analyzing the actual images of the art, I was left with a lot of text.
+        So I did an sentiment analysis of the titles of the artwork to see what I could find.
+        </p>
+        <p>
+        By labeling individual words in the titles, I found that "joy" "anticipation" and "trust" were the top three categories. 
+        Artists conveyed positive associations with travel and waiting, although the title itself
+        isn't what is on display. While a lot of words were considered neutral, emotions like 
+        anger and disgust are noticeably lower, 
+        which also makes me wonder if the artwork has to follow guidelines (e.g., stray away from certain polarizing subjects) 
+        or if the artists commissoned were already enthusiatic about public transit.
+        </p>
+ 
+        <figure class="essay__fig">
+            <img
+                class="essay__img"
+                src="/images/art_title_emotion.png"
+                alt="A image of a mosiac parrot couple."
+            />
+            <figcaption class="essay__img-caption">
+                A bar chart of artwork titles grouped by emotion through sentiment analysis in R.
+            </figcaption>
+        </figure>
+
+        
+
+    <section id="methodology">
+        <h2 class = "heading">Methodology</h2>
+        <p>I used a mix of the following research methods to gather data:</p>
+        <ul>
+            <li> Open source NY data webpage</li>
+            <li> Cleaned and explored the data using R. </li>
+            <li> Conducted sentiment analysis since data was largely characters. </li>  
+        </ul>
+        
+    </section>
+
+</body>
+</html>
