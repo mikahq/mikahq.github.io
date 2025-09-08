@@ -16,3 +16,19 @@ function wiggleWitIt() {
 
 document.addEventListener("DOMContentLoaded", wiggleWitIt());
 
+document.querySelectorAll(".project-link").forEach(link => {
+    const button = link.querySelector(".view-button");
+
+    link.addEventListener("mousemove", e => {
+      const rect = link.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      button.style.left = `${x}px`;
+      button.style.top = `${y}px`;
+      button.style.opacity = 1;
+    });
+
+    link.addEventListener("mouseleave", () => {
+      button.style.opacity = 0;
+    });
+  });

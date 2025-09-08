@@ -6,7 +6,7 @@
     /* ------------------- */
     /* Typography          */
     /* ------------------- */
-    --font-sans: "Arial", sans-serif;
+    --font-sans: "Geist", sans-serif;
     --font-serif: "Baskervville", serif;
     --font-display: "Geist", sans-serif;
     --default-font-family: var(--font-sans);
@@ -200,7 +200,7 @@ html {
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Geist", sans-serif;
   margin: 0 auto;
   padding-left: 2%;
   padding-right: 2%;
@@ -219,6 +219,112 @@ h2 {
   color: var(--flexoki-600)
  
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--flexoki-paper);
+  border-bottom: 1px solid var(--flexoki-200);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-left p {
+  margin: 0;
+  font-family: "Geist", serif;
+  font-size: 1rem;
+  color: var(--flexoki-800);
+  font-weight: 500;
+}
+
+.nav-right a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: var(--flexoki-700);
+  transition: color 0.3s ease;
+}
+
+.nav-right a:hover {
+  color: var(--flexoki-cyan-600);
+}
+
+
+.home-outcomes {
+  display: flex;
+  flex-wrap: wrap;      /* allows items to wrap onto the next row */
+  gap: 1rem;            /* spacing between cards */
+  justify-content: left;
+}
+
+.home-outcomes > article {
+  flex: 1 1 calc(50% - 2rem); /* two per row */
+  max-width: 80%;          /* prevents huge cards */
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.home-outcomes a img {
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.home-outcomes a:hover img {
+  transform: scale(1.03); /* subtle zoom to show it’s clickable */
+}
+
+.project-link {
+  position: relative;
+  display: inline-block;
+}
+
+.project-img {
+  display: block;
+  width: 200px;
+  aspect-ratio: 4 / 6;
+  object-fit: cover;
+}
+
+/* Button hidden by default */
+.view-button {
+  position: absolute;
+  background: var(--flexoki-cyan-600);
+  color: var(--flexoki-paper);
+    font-family: "Geist";
+
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 999px;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* don’t block clicks */
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+}
+
+
+.project-img {
+  width: 80%;
+  aspect-ratio: 6 / 4;   /* keeps consistent portrait ratio */
+  object-fit: cover;
+  display: block;
+}
+
+/* Mobile: stack 1 per row */
+@media (max-width: 767px) {
+  .home-outcomes > article {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .project-img {
+    width: 150px; /* shrink thumbnail a bit */
+  }
+}
+
 
 .outcomes {
   font-family: "Geist";
