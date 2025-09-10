@@ -5,155 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/style.css" rel="stylesheet">
 
-    <title>Info Vis</title>
+    <title>Info Vis | Mikah</title>
 </head>
 <body>
-    <p> <a href="/index.html"> Return </a></p>
+  <div class="page-container">
+
+    <p class="return"> <a href="/index.html"> Return </a></p>
   
-        
-   <!-- Table of Contents -->
-   <div class="toc">
-    <h1 class="title"><a href="#"> Visualizations</a></h1>
+<!-- Table of Contents -->
+<div class="toc">
+  <h1 class="title"><a href="#"> Visualizations</a></h1>
+  <ul>
+    <li class="toc__item"><a href="#design-challenge" class="selected"> Context </a></li>
+    <li class="toc__item"><a href="#team"> Team </a></li>
+    <li class="toc__item"><a href="#process"> Process & Data Collection </a></li>
+    <li class="toc__item"><a href="#presentation"> Presentation </a></li>
+  </ul>
+</div>
+
+<!-- Essay -->
+<div class="essay-content">
+
+  <!-- Design Challenge -->
+  <section id="design-challenge">
+    <p class="introduction__hook">
+      Visualizing libraries, books, and their patrons 
+    </p>
+<h2 class="heading"> Datasets </h2>    
+    <p> <a href = "https://data.sfgov.org/Culture-and-Recreation/Library-Usage/qzz6-2jup/about_data" > The San Francisco Library </a>
+      boasts multiple branches in a densely populated city. They have an impressive dataset spanning 2004-2016, so I took a look. 
+    </p>
+    <p> <a href="https://www.nytimes.com/interactive/2024/books/best-books-21st-century.html">The New York Times</a> 
+      also came out with a list of the "best books of the 20th century" polling different famous authors.
+      Here, I was tasked to draw out differences and make comparisons.
+    </p>
+  </section>
+
+  <!-- Team -->
+  <section id="team">
+    <h2 class="heading"> Team </h2>
+    <p>This was an individual project — I was responsible for gathering data, designing visualizations, and drawing insights.</p>
+  </section>
+
+  <!-- Process & Data Collection -->
+  <section id="process">
+    <h2 class="heading"> Process & Data Collection </h2>
+    <p>I gathered the data for this project from the City and County of San Francisco and from The New York Times Best 100 Books from the 21st century.</p>
     <ul>
-      <li class="toc__item">
-        <a href="#seasonal" class="selected"> Seasonal trends</a>
-      </li>
-      <li class="toc__item">
-        <a href="#patrons"> Communication and Patrons </a>
-      </li>
-      <li class="toc__item"><a href="#books"> NYT Books </a></li>
-      <li class="toc__item"><a href="#methodology"> Method </a></li>
-      <li class="toc__item"><a href="#scope"> Scope </a></li>
-
-
+      <li>Exploratory data analysis</li>
+      <li>Generate questions into hypotheses about the data before conducting data analysis</li>
+      <li>Data prep and cleaning in R, Tableau, Excel, and Observable Plot</li>
     </ul>
-  </div>
-   <!-- Essay -->
-   <div class="essay-content">
-    <section id="introduction">
-      <p class="introduction__hook">
-        Visualizing libraries, books, and their patrons 
-      </p>
-      <!-- <p class = "geist"> Solution: Combed through dataset to unearth trends on seasonal reading and 
-        who frequents the library. I experimented with different data visualizations in order to 
-        communicate my message.
-       </p> -->
-    </section>
+  </section>
 
-    <section id="seasonal">
+
+  <!-- Presentation -->
+  <section id="presentation">
+    <h2 class="heading"> Presentation </h2>
+    <h3> San Francisco Library</h3>
+    <p>
+      While readership varies in other months, the summer is consistently busy. June, July and August
+      see a massive spike in readership, regardless of the branch location. 
+    </p>
+
+    <figure class="essay__fig">
+      <img
+        class="essay__img"
+        src="/images/seasons.png"
+        alt="A image of the data from the San Francisco Library related to seasonal trends. There is a line chart and 2 bar charts."
+      />
+      <figcaption class="essay__img-caption">
+        Seasonal trends in the San Francisco Library checkouts.
+      </figcaption>
+    </figure>
+
     
 
-        <h2 class = "heading"> Summertime and the (reading) is easy
+    <h3> Generational differences in library communications. </h3>
+    <p>The preference for contact methods in library communications underwent a shift around 2013. Phone, print and email were neck in neck until email rose ahead drastically. </p>
+    <p>While the majority of people checking out books skewed older, around 65+ years, they had a more even preference for all methods. This constrasts with patrons under 55 years, who much prefer email.</p>
+    <figure class="essay__fig">
+      <img
+        class="essay__img"
+        src="/images/email dash.png"
+        alt="A image of library patron communication trends in the San Francisco Library contact methods. There are 2 line charts and one bar chart depicting age."
+      />
+      <figcaption class="essay__img-caption">
+        Library patron communication trends in the San Francisco Library contact methods.
+      </figcaption>
+    </figure>
 
-        </h2>
+        <h3> Fiction becomes elite</h3>
 
-        <figure class="essay__fig">
-            <img
-            class="essay__img"
-            src="/images/seasons.png"
-            alt="A image of the data from the San Francisco Library related to seasonal trends. There is a line chart and 2 bar charts."
-          />
-          <figcaption class="essay__img-caption">
-            Seasonal trends in the San Francisco Library checkouts.
-          </figcaption>
-        </figure>
-        
-        <p> <a href = "https://data.sfgov.org/Culture-and-Recreation/Library-Usage/qzz6-2jup/about_data" > The San Francisco Library </a>
-            boasts multiple branches in a densely populated city. They have an impressive dataset spanning 2004-2016, so I took a look. </p>
-        <p>
-            While readership varies in other months, the summer is consistently busy. June, July and August
-            see a massive spike in readership, regardless of the branch location. 
-            
-        </p>
-
-    </section>
-
-        <section id="patrons">
-
-        <h2 class = "heading"> Generational differences in library communications. </h2>
-        <p> The preference for contact methods in library communications underwent a shift around 2013. Phone, print and email were neck in neck
-            until email rose ahead drastically. 
-            <p> 
-                While the majority of people checking out books skewed older, around 65+ years, they had a more even preference for all methods. 
-                This constrasts with patrons under 55 years, who much prefer email. 
-
-            </p>
-            <figure class="essay__fig">
-            <img
-            class="essay__img"
-            src="/images/email dash.png"
-            alt="A image of library patron communication trends in the San Francisco Library contact methods. There are 2 line charts and one bar chart depicting age."
-          />
-          <figcaption class="essay__img-caption">
-           Library patron communication trends in the San Francisco Library contact methods.
-          </figcaption>
-        </figure>
-      
-    </section>
-
-    <section id="books">
-        <h2 class ="heading"> Interrogating The New York Times reading list </h2>
-        <p> <a href="https://www.nytimes.com/interactive/2024/books/best-books-21st-century.html">The New York Times</a> 
-            came out with a list of the "best books of the 20th century" polling different famous authors.
-           Among them was Stephen King (a personal favorite). 
-          Here, I was tasked to draw out differences and make comparisons.
-        </p>
-
-        <p> We can see that out of the 100 books in the list, 71 of them were fiction.</p>
-        <p> Non-fiction was a scarcer genre. Yet when we look at ratings from the general public, 
-           non-fiction consistently ranked more highly than fiction, 
-            above a 4.0/5.0. 
-        </p>
-      <p> Secondly, I created an organized category of sub-genres by main genre. Historical books had a good mix of both 
-        fiction and non-fiction, but the genres were mainly siloed. Why aren't books, at least in this list, doing genre-cross overs?
-        What about genres not mentioned or captured in this list?
-      </p>
-
-      <figure class="essay__fig">
-        <img
+   
+    <p>From the New York Times dataset, we can see that out of the 100 books in the list, 71 of them were fiction.</p>
+    <p>Non-fiction was a scarcer genre. Yet when we look at ratings from the general public, 
+      non-fiction consistently ranked more highly than fiction, above a 4.0/5.0. 
+    </p>
+    <p>Secondly, I created an organized category of sub-genres by main genre. Historical books had a good mix of both fiction and non-fiction, but the genres were mainly siloed. Why aren't books, at least in this list, doing genre-cross overs? What about genres not mentioned or captured in this list?</p>
+    <figure class="essay__fig">
+      <img
         class="essay__img"
         src="/images/plot_visual_encoding.png"
         alt="A image of two plots made in observable Plot. The left shows fiction and non fiction. The right shows sub genres from the main genre. The color scheme is red and blue."
       />
       <figcaption class="essay__img-caption">
-       The New York Times ranking list of books from the 21st century. Source: The New York Times
+        The New York Times ranking list of books from the 21st century. Source: The New York Times
       </figcaption>
     </figure>
-         <p> Which books would make your top 100 list? </p>
-    </section>
-    
+    <p>Which books would make your top 100 list? </p>
 
-    <section id="methodology">
-      <h2 class = "heading">Methodology</h2>
-        <p>I gathered the data for this project from the City and County of San Francisco and from The New York Times Best 100 Books from the 21st century.</p>
-        <ul>
-          <li>Exploratory data analysis</li>
-          <li> Generate questions into hypotheses about the data before conducting data analysis</li>
-          <li> Data prep and cleaning in Tableau, Excel, and Observable Plot </li>
-        </ul>
-       
-
-    <section id="scope">
-      <h2 class = "heading"> Scope </h2>
-      <p> 
-        <strong> Choosing the message of the visual is key</strong> 
-        <ul>
-        <li> Before drafting a viusalization, writing down the goal or takeaway is crucial to guide the format I decide to go with! </li>
+    <h3> Lessons learned </h3>
+    <p>Choosing the message of the visual is key</p>
+    <ul>
+      <li>Before drafting a viusalization, writing down the goal or takeaway is crucial to guide the format I decide to go with!</li>
     </ul>
-        <strong> Understanding information will be left out</strong> 
-        <ul>
-        <li>When I choose to represent one kind of information or transform the data, there will always be other types of information I may omit for clarity.</li>
+    <p>Understanding information will be left out</p>
+    <ul>
+      <li>When I choose to represent one kind of information or transform the data, there will always be other types of information I may omit for clarity.</li>
     </ul>
+    <p>Always room for improvement</p>
+    <ul>
+      <li>Not all of the visualizations I create will be as clear as possible, but I strive to incorporate feedback in the re-design!</li>
+    </ul>
+  </section>
 
-        <strong> Always room for improvement</strong> 
-        <ul>
-        <li> Not all of the visualizations I create will be as clear as possible, but I strive to incorporate feedback in the re-design!</li>
-    </ul></p>
+</div>
 
-   
-
-    </section>
     
+</div>
 
 
 </body>

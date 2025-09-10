@@ -174,6 +174,49 @@
 }
 
 
+/* Reset defaults */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Shared container */
+.page-container,
+.footer-container {
+  width: 100%;
+  max-width: 1200px;    /* wider on desktop */
+  margin: 0 auto;
+  
+  padding: 0 3rem;      /* gutters */
+}
+
+/* For very large screens, go even wider */
+@media (min-width: 90em) { /* ~1440px and up */
+  .page-container,
+  .footer-container {
+    max-width: 1600px;
+    padding: 0 4rem;
+  }
+}
+
+.footer-headline {
+  font-family: "Baskervville";
+  font-size: 6em; /* scales with parent font-size */
+  color: var(--flexoki-paper);
+  line-height: 1.1; 
+}
+
+
+/* Footer full-bleed background band */
+footer {
+  background-color: var(--flexoki-black);
+  color: var(--flexoki-paper);
+  width: 100%;
+  margin: 0;
+  padding-top: 3rem ; /* background stretches edge to edge */
+  font-size: 2vh;
+}
+
 
 
 
@@ -192,26 +235,24 @@ html {
 
 @font-face {
   font-family: Geist;
-  src: url(/fonts/apple_garamond/Geist-Regular.otf);
+  src: url(/fonts/Geist-Regular.otf);
 }
 @font-face {
   font-family: Baskervville;
-  src: url(/fonts/apple_garamond/Baskervville-Regular.otf);
+  src: url(/fonts/Baskervville-Regular.otf);
 }
+
+
 
 body {
   font-family: "Geist", sans-serif;
-  margin: 0 auto;
-  padding-left: 2%;
-  padding-right: 2%;
-  
+  margin: 0;       /* reset */
   font-size: 20px;
   line-height: 1.5;
   background-color: var(--flexoki-paper);
   color: var(--flexoki-black);
   transition: color 0.3s ease, background-color 0.3s ease;
 }
-
 
 h2 {
   font-family: "Baskervville";
@@ -220,50 +261,47 @@ h2 {
  
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--flexoki-paper);
-  border-bottom: 1px solid var(--flexoki-200);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+
+
+.nda {
+  font-family: "Baskervville";
+  font-size: 8vh;
+  color: var(--flexoki-cyan-600)
+  
+}
+p.return {
+  padding-top: 3rem;
+}
+p.b {
+  white-space: pre-line;
 }
 
-.nav-left p {
-  margin: 0;
-  font-family: "Geist", serif;
-  font-size: 1rem;
-  color: var(--flexoki-800);
-  font-weight: 500;
-}
-
-.nav-right a {
-  margin-left: 1.5rem;
-  text-decoration: none;
-  font-size: 0.95rem;
-  color: var(--flexoki-700);
-  transition: color 0.3s ease;
-}
-
-.nav-right a:hover {
-  color: var(--flexoki-cyan-600);
-}
 
 
 .home-outcomes {
   display: flex;
-  flex-wrap: wrap;      /* allows items to wrap onto the next row */
-  gap: 1rem;            /* spacing between cards */
-  justify-content: left;
+  flex-wrap: nowrap;           /* prevent wrapping */
+  overflow-x: auto;            /* enable horizontal scroll */
+  gap: 1.5rem;                 /* spacing between cards */
+  padding: 1rem;               /* breathing room */
+  scroll-snap-type: x mandatory; 
+  -ms-overflow-style: none;  /* IE + Edge */
+  scrollbar-width: none;     /* Firefox */
+  padding-bottom: 8rem; 
+  
+}
+
+.home-outcomes::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari */
 }
 
 .home-outcomes > article {
-  flex: 1 1 calc(50% - 2rem); /* two per row */
-  max-width: 80%;          /* prevents huge cards */
+  flex: 0 0 auto;              /* prevent shrinking */
+  width: 24rem;                /* card width */
+  max-width: 80%;              /* prevent overflow on small screens */
   text-align: left;
   box-sizing: border-box;
+  scroll-snap-align: start;    /* snap cards nicely */
 }
 
 .home-outcomes a img {
@@ -272,7 +310,7 @@ h2 {
 }
 
 .home-outcomes a:hover img {
-  transform: scale(1.03); /* subtle zoom to show it’s clickable */
+  transform: scale(1.03);      /* subtle zoom to show clickable */
 }
 
 .project-link {
@@ -282,64 +320,86 @@ h2 {
 
 .project-img {
   display: block;
-  width: 200px;
-  aspect-ratio: 4 / 6;
+  width: 100%;
+  aspect-ratio: 6/4;
   object-fit: cover;
 }
 
-/* Button hidden by default */
+/* Button styling */
 .view-button {
   position: absolute;
-  background: var(--flexoki-cyan-600);
+  background: var(--flexoki-black);
   color: var(--flexoki-paper);
-    font-family: "Geist";
-
+  font-family: "Geist";
   font-size: 0.85rem;
   font-weight: 600;
-  padding: 6px 14px;
+  padding: 0.4rem 1rem;
   border-radius: 999px;
   opacity: 0;
   transform: translate(-50%, -50%);
-  pointer-events: none; /* don’t block clicks */
+  pointer-events: none;
   transition: opacity 0.2s ease;
   white-space: nowrap;
 }
 
 
-.project-img {
-  width: 80%;
-  aspect-ratio: 6 / 4;   /* keeps consistent portrait ratio */
-  object-fit: cover;
-  display: block;
+
+.tags {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-/* Mobile: stack 1 per row */
-@media (max-width: 767px) {
-  .home-outcomes > article {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background: var(--flexoki-cyan-100); /* soft accent */
+  color: var(--flexoki-cyan-700);
+  border-radius: 999px; /* pill shape */
+  white-space: nowrap;
+}
 
-  .project-img {
-    width: 150px; /* shrink thumbnail a bit */
-  }
+.tag-type {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+ background: var(--flexoki-cyan-100); /* soft accent */
+  color: var(--flexoki-cyan-700);
+  border-radius: 999px; /* pill shape */
+  white-space: nowrap;
 }
 
 
 .outcomes {
-  font-family: "Geist";
-  font-size: 2vh;
-  color: var(--flexoki-black);
-
   display: flex;
-  flex-wrap: wrap; /* allow wrapping */
-  gap: 2rem; /* space between items */
+  flex-wrap: wrap;
+  gap: 0.4rem;
 }
 
 .outcomes > * {
-  flex: 1 1 calc(33.33% - 2rem); /* each child takes ~1/3 width minus gap */
-  box-sizing: border-box; /* include padding and border in width */
+  flex: 1 1 calc(33.5% - 0.4rem);
 }
+
+.footer-outcomes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+
+  /* Align items at the top of each row */
+  align-items: flex-start; 
+}
+
+.footer-outcomes > * {
+  flex: 1 1 calc(50% - 0.4rem);
+
+  /* Make sure content inside each child is left-aligned */
+  text-align: left;
+}
+
 
 .geist {
   font-family: "Geist";
@@ -352,14 +412,14 @@ h2 {
 }
 
 
-
-
-
 a {
   text-decoration:underline;
   color: var(--flexoki-600);
   transition: color 0.3s ease;
 }
+
+
+
 
 a:hover {
   color: var(--flexoki-cyan-600);
@@ -376,8 +436,6 @@ section:not(:last-child) {
   overflow: hidden;
   clip: rect(0 0 0 0);
 }
-
-
 
 
 /* Table of Contents */
@@ -435,17 +493,17 @@ section:not(:last-child) {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: var(--flexoki-blue-600);
+  background-color: var(--flexoki-black);
   z-index: -100;
   transform: scale(0);
 }
 
 
-/* .essay-content {
+.essay-content {
   width: 100%;
   max-width: 90%;
   line-height: 1.4;
-} */
+}
 
 .essay-content .heading {
   font-weight: 400;
@@ -494,9 +552,18 @@ section:not(:last-child) {
 
 .introduction__hook {
   font-family: "Baskervville";
-  font-size: 7vh;
+  font-size: 3em;
   font-weight: 500;
+ 
 }
+
+.home__introduction__hook {
+  font-family: "Baskervville";
+  font-size: 3em;
+  font-weight: 500;
+  padding-bottom: 2em;
+}
+
 
 .web-developers__list-item:not(:last-child) {
   margin-bottom: 20px;
@@ -518,7 +585,6 @@ section:not(:last-child) {
   height: 2px;
   background-color: var(--text-color);
 }
-
 
 
 
@@ -604,6 +670,10 @@ section:not(:last-child) {
 @media (min-width: 48em) {
   /* Approx 768px, but using em for more scalable breakpoints */
   body {
+    margin: 0;
+    /* font-size: 1.25vw; scales with viewport width */
+  }
+  page-container {
     margin: 10vh 5vw;
     /* font-size: 1.25vw; scales with viewport width */
   }
@@ -636,15 +706,9 @@ section:not(:last-child) {
     font-size: 1vw;
   }
 
-  /* .introduction__hook {
-    font-size: 4vw;
-  } */
 
-  footer {
-    font-size: 1vw;
-  }
+  
 }
-
 
 
 ::selection {
@@ -659,12 +723,6 @@ w{
 }
 
 
-
-.main{
-  max-width: 800px;
-  padding-bottom: 200px;
-/*   text-align: center; */
-}
 
 w span {
   display:inline-block;
@@ -706,9 +764,3 @@ w span {
 }
 
 
-footer {
-  color: var(--flexoki-b);
-  text-align: left;
-  
-  font-size: 12px;
-}
