@@ -554,8 +554,9 @@ section:not(:last-child) {
   font-family: "Baskervville";
   font-size: 3em;
   font-weight: 500;
+  max-width:50rem;
+  }
  
-}
 
 .home__introduction__hook {
   font-family: "Baskervville";
