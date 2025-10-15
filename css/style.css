@@ -261,7 +261,13 @@ h2 {
  
 }
 
+.quote {
+font-family: "Baskervville";
+  font-size: 4vh;
+  align-items: center;
+  
 
+}
 
 .nda {
   font-family: "Baskervville";
@@ -372,6 +378,7 @@ p.b {
   border-radius: 999px; /* pill shape */
   white-space: nowrap;
 }
+
 
 
 .outcomes {
