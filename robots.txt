@@ -48,4 +48,8 @@ Disallow: /
 User-agent: Applebot
 Disallow: /
 
+User-agent: Amazonbot
+Disallow: /
+
+
 Crawl-delay: 10

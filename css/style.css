@@ -283,10 +283,51 @@ p.b {
 }
 
 
+/* ===== HOME OUTCOMES ====== */
+
+.home-outcomes-wrapper {
+  overflow-x: auto; /* allows side scrolling */
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+
+
+.home-outcomes article {
+  flex: 0 0 auto; /* prevent shrinking so they stay side-by-side */
+  width: 280px; /* adjust per card width */
+}
+
+
+.home-outcomes p {
+  display: block;
+  margin: 0.5rem 1rem;
+  line-height: 1.4;
+  white-space: normal;
+  
+}
+
+
+.scroll-button {
+  cursor: pointer;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.scroll-button:hover {
+  transform: translateX(4px);
+  color: var(--flexoki-cyan-500);
+}
+
 
 .home-outcomes {
-  display: flex;
-  flex-wrap: nowrap;           /* prevent wrapping */
+ display: inline-flex; /* makes children flow horizontally */
+  gap: 2rem;
   overflow-x: auto;            /* enable horizontal scroll */
   gap: 1.5rem;                 /* spacing between cards */
   padding: 1rem;               /* breathing room */

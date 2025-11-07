@@ -32,3 +32,14 @@ document.querySelectorAll(".project-link").forEach(link => {
       button.style.opacity = 0;
     });
   });
+
+  const scrollButton = document.getElementById("scrollRight");
+  const container = document.querySelector(".home-outcomes-wrapper");
+
+  scrollButton.addEventListener("click", () => {
+    if (container.scrollLeft + container.clientWidth >= container.scrollWidth - 10) {
+      container.scrollTo({ left: 0, behavior: "smooth" });
+    } else {
+      container.scrollBy({ left: 400, behavior: "smooth" });
+    }
+  });
