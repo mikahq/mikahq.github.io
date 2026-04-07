@@ -3,174 +3,193 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" />
     <link href="favicon.ico" rel="icon" type="image/png" />
     <title>Mikah | UX Researcher</title>
     <meta name="robots" content="noindex" />
   </head>
   <body>
-    <!-- credit to the skeleton of this website's code: https://github.com/ctlnwng/the-unsustainable-web/blob/master/index.html -->
-    <div class="page-container">
-      <div class="essay-content-landing">
-        <section id="introduction">
-          <h1 class="home__introduction__hook">
-            Mikah
-            <img
-              src="images/author.png"
-              alt="A photo of the author smiling. "
-              width="150px"
-            />
-            is a UX/product researcher by training, a cybersecurity consultant by necessity, and ex-student in social and cognitive psychology.</p>
-          </h1>
-        
-        </section>
-      </div>
 
+    <nav class="site-nav">
       
-      <p id="scrollRight" class="scroll-button">Selected Projects &rarr;</p>
-      <div class="home-outcomes-wrapper">
-      <section class="home-outcomes">
-        <article>
-          <a href="pages/salesforce.html" class="project-link">
+      <ul class="site-nav__links">
+        <li><a href="mailto:mikah@berkeley.edu">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header class="hero">
+      <h1 class="hero__headline">
+        Mikah is a UX/product researcher by training,
+        a cybersecurity consultant by necessity,
+        and ex-student in social and cognitive psychology.
+      </h1>
+      <p class="hero__body">
+        If you have interest in reading
+        <a href="https://www.goodreads.com/user/show/179266256-mikah">books</a> (fiction, classics, horror),
+        listening to music, identifying dog breeds, staring at birds, eating fruit, knitting, or
+        <a href="/pages/artportfolio.html">making art</a>,
+        let's talk.
+      </p>
+    </header>
+
+    <main class="projects">
+      <span class="projects__heading">Selected projects</span>
+
+      <ol class="featured__list" style="list-style:none; padding:0; margin:0;">
+
+        <!-- Salesforce -->
+        <li class="project-row" id="proj-salesforce">
+          <div class="project-row__thumb">
             <img
               src="images/Salesforce.com_logo.svg.png"
               alt="Salesforce logo"
-              class="project-img"
             />
-            <span class="view-button">VIEW PROJECT</span>
-          </a>
-          <div class="tags">
-            <span class="tag-type">Case study</span>
-            <span class="tag">User interviews</span>
-            <span class="tag">Survey design</span>
           </div>
-          <h3>Salesforce</h3>
-          <p>
-            Recommending AI that helps, not replaces, in healthcare journeys
-          </p>
-        </article>
-
-        <article>
-          <a href="pages/info_vis.html" class="project-link">
-            <img
-              src="images/mac_dataviz.png"
-              alt="Data-Driven Narrative project"
-              class="project-img"
-            />
-            <span class="view-button">VIEW PROJECT</span>
-          </a>
-
-          <div class="tags">
-            <span class="tag-type">Case study</span>
-            <span class="tag">Tableau</span>
-            <span class="tag">Data visualization</span>
+          <div class="project-row__body">
+            <span class="project-row__type">Case study &mdash; Contractor, 2025</span>
+            <a href="pages/salesforce.html" class="project-row__title">Improving member–provider matching with AI</a>
+            <p class="project-row__desc">
+              As a contractor for Salesforce, I led mixed-methods research into healthcare referral workflows —
+              uncovering where AI could reduce administrative burden without eroding the trust that makes care feel human.
+              Our recommendations shaped how AI gets embedded in contact center tools.
+            </p>
+            <div class="project-row__meta">
+              <div class="project-row__meta-item">
+                <span class="project-row__meta-label">Role</span>
+                <span class="project-row__meta-value">User Researcher</span>
+              </div>
+              <div class="project-row__meta-item">
+                <span class="project-row__meta-label">Methods</span>
+                <span class="project-row__meta-value">Survey, IDIs, affinity mapping</span>
+              </div>
+              <div class="project-row__meta-item">
+                <span class="project-row__meta-label">Team</span>
+                <span class="project-row__meta-value">4 UX Researchers</span>
+              </div>
+            </div>
           </div>
-          <p></p>
-          <h3>Book data and infographics</h3>
-          <p>
-            Drawing insights from the San Francisco library, the New York
-            Times, and redesigning an infographic about the Hollywood gender gap.
-          </p>
-        </article>
+        </li>
 
-        <article>
-          <a href="pages/bart.html" class="project-link">
+        <!-- BART -->
+        <li class="project-row" id="proj-bart">
+          <div class="project-row__thumb">
             <img
               src="images/art_portfolio/bartcardsredesign.jpg"
-              alt="BART project"
-              class="project-img"
+              alt="BART Clipper card redesign"
             />
-            <span class="view-button">VIEW PROJECT</span>
-          </a>
-          <div class="tags">
-            <span class="tag-type">Case study</span>
-            <span class="tag">User interviews</span>
-            <span class="tag">Ethnography</span>
           </div>
-          <h3>Bay Area Rapid Transit</h3>
-          <p>Understanding why people love and hate BART.</p>
-        </article>
+          <div class="project-row__body">
+            <span class="project-row__type">Case study &mdash; Independent, October 2024</span>
+            <a href="pages/bart.html" class="project-row__title">A Case of Convenience: Bay Area Rapid Transit</a>
+            <p class="project-row__desc">
+              Understanding why people love and hate BART. Using ethnography, in-depth interviews, and desk research,
+              I surfaced three patterns that explain a transit system's paradox —
+              and proposed redesigned Clipper cards as a community-building intervention.
+            </p>
+            <div class="project-row__meta">
+              <div class="project-row__meta-item">
+                <span class="project-row__meta-label">Role</span>
+                <span class="project-row__meta-value">User Researcher</span>
+              </div>
+              <div class="project-row__meta-item">
+                <span class="project-row__meta-label">Methods</span>
+                <span class="project-row__meta-value">IDIs (N=5), ethnography, desk research</span>
+              </div>
+              <div class="project-row__meta-item">
+                <span class="project-row__meta-label">Team</span>
+                <span class="project-row__meta-value">Independent</span>
+              </div>
+            </div>
+          </div>
+        </li>
 
-        <article>
-          <a href="pages/socdev.html" class="project-link">
+        <!-- Thesis -->
+        <li class="project-row" id="proj-thesis">
+          <div class="project-row__thumb">
             <img
               src="images/socdev.png"
-              alt="Psychology & Childhood Development project"
-              class="project-img"
+              alt="Psychology and childhood development"
             />
-            <span class="view-button">VIEW PROJECT</span>
-          </a>
-          <div class="tags">
-            <span class="tag-type">Academia</span>
-            <span class="tag">Recruitment</span>
-            <span class="tag">Experimental design</span>
           </div>
-          <h3>Thesis</h3>
-          <p>How kids develop expectations around race.</p>
-        </article>
-
-        
-
-        <article>
-          <a href="pages/kqed.html" class="project-link">
-            <img
-              src="images/kqed.png"
-              alt="Fred and Qued mascots from KQED"
-              class="project-img"
-            />
-            <span class="view-button">VIEW PROJECT</span>
-          </a>
-
-          <div class="tags">
-            <span class="tag-type">Internship</span>
-            <span class="tag">UX Research</span>
-            <span class="tag">Research design</span>
+          <div class="project-row__body">
+            <span class="project-row__type">Research &mdash; Academia, Sept 2023–June 2024</span>
+            <a href="pages/socdev.html" class="project-row__title">Children's Judgments of Dual Identities</a>
+            <p class="project-row__desc">
+              How kids develop expectations around race. 303 participants aged 6–13, recruited at a local zoo and online.
+              Findings contributed to an ongoing white paper on child social development.
+            </p>
+            <div class="project-row__meta">
+              <div class="project-row__meta-item">
+                <span class="project-row__meta-label">Role</span>
+                <span class="project-row__meta-value">Researcher</span>
+              </div>
+              <div class="project-row__meta-item">
+                <span class="project-row__meta-label">Methods</span>
+                <span class="project-row__meta-value">Experimental design, regression, R</span>
+              </div>
+              <div class="project-row__meta-item">
+                <span class="project-row__meta-label">PI</span>
+                <span class="project-row__meta-value">Dr. Liberman</span>
+              </div>
+            </div>
           </div>
-          <p></p>
-          <h3>KQED</h3>
-          <p>Working and conducting research to better serve the Bay Area.</p>
-        </article>
-      </section>
-    </div>
-    </div>
+        </li>
 
-    <footer>
-      <div class="footer-container">
-        <div class="footer-outcomes">
-          <h2 class="footer-headline">
-            Let's work
-            <a
-              href="mailto:mikah@berkeley.edu"
-              style="color: var(--flexoki-cyan-200)"
-              >together</a
-            >.
-          </h2>
+      </ol>
+    </main>
 
-          <p class="b">
-            This webpage is brought to you with the help of the WWW. Revamped
-            every couple of months. If you have interests in
-            <a
-              href="https://www.goodreads.com/user/show/179266256-mikah"
-              style="color: var(--flexoki-cyan-200)"
-              >books</a
-            >, music, identifying dog breeds, staring at birds, eating fruit,
-            <a
-              href="/pages/artportfolio.html"
-              style="color: var(--flexoki-cyan-200)"
-              >making art</a
-            >, or discussing funky website design, let's talk. Fonts are Geist
-            and Baskerville.
-          </p>
-        </div>
+    <section class="all-work">
+      <span class="all-work__heading">All work</span>
+      <div class="all-work__grid">
+
+        <a href="pages/info_vis.html" class="all-work__item">
+          <span class="all-work__item-type">Case study &mdash; Data Visualization</span>
+          <div class="all-work__item-title">Book data and infographics</div>
+          <p class="all-work__item-desc">Drawing insights from the San Francisco library, the New York Times, and redesigning a Hollywood gender gap infographic.</p>
+        </a>
+
+        <a href="pages/science_communication.html" class="all-work__item">
+          <span class="all-work__item-type">Project &mdash; Research + Design</span>
+          <div class="all-work__item-title">Teaching science as a social process</div>
+          <p class="all-work__item-desc">How might K-12 educators teach students that science is built on peer review and consensus? n=10 educator interviews. Team of 5.</p>
+        </a>
+
+        <a href="pages/artportfolio.html" class="all-work__item">
+          <span class="all-work__item-type">Portfolio &mdash; Design &amp; Illustration</span>
+          <div class="all-work__item-title">Creating and designing</div>
+          <p class="all-work__item-desc">Web design, illustration, painting, and digital art. Published in a local magazine.</p>
+        </a>
+
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <h2 class="site-footer__headline">
+          Let's work <a href="mailto:mikah@berkeley.edu">together</a>.
+        </h2>
+        <p class="site-footer__body">
+          This webpage is brought to you with the help of the WWW. Revamped every couple of months.
+          Fonts are Geist and Baskervville.
+        </p>
       </div>
     </footer>
 
-    <script src="javascript/script.js"></script>
+    <script>
+      // Make entire project row clickable — delegates to the title link
+      document.querySelectorAll(".project-row").forEach(row => {
+        const link = row.querySelector(".project-row__title");
+        if (!link) return;
+        row.addEventListener("click", e => {
+          if (e.target.closest("a")) return;
+          link.click();
+        });
+      });
+    </script>
 
     <script
       data-goatcounter="https://mikah.goatcounter.com/count"
-      async
-      src="//gc.zgo.at/count.js"
+      async src="//gc.zgo.at/count.js"
     ></script>
   </body>
 </html>

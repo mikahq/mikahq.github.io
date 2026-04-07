@@ -4,174 +4,189 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/css/style.css" rel="stylesheet" />
-
     <title>Salesforce | Mikah</title>
   </head>
-
   <body>
-    <div class="page-container">
-      <p class="return"><a href="/index.html"> Return </a></p>
 
-      <!-- Table of Contents -->
-      <div class="toc">
-        <h1 class="title"><a href="#"> Salesforce </a></h1>
-        <ul>
-          <li class="toc__item">
-            <a href="#design-challenge" class="selected"> Context </a>
-          </li>
-          <li class="toc__item"><a href="#team"> Team </a></li>
-          <li class="toc__item">
-            <a href="#process"> Process & Data Collection</a>
-          </li>
-          <li class="toc__item">
-            <a href="#analysis"> Analyzing the Data </a>
-          </li>
-          <li class="toc__item"><a href="#presentation"> Presentation </a></li>
-        </ul>
-      </div>
 
-      <!-- Essay -->
-      <div class="essay-content">
-        <!-- Design Challenge -->
-        <section id="design-challenge">
-          <p class="introduction__hook">
-            Improving member–provider matching with AI
-          </p>
 
-          <div class="outcomes">
-            <p>Role: User researcher</p>
-            <p>Timeline: 4 months, 2025</p>
-            <p>
-              Skills: Research circulation, survey design, generative research, user experience
-              research
+    <a href="/index.html" class="back-link">All projects</a>
+
+    <div class="page-wrap">
+      <div class="page-body">
+
+        <nav class="page-nav" aria-label="Page sections">
+          <a href="#" class="page-nav__project">Salesforce</a>
+          <ul class="page-nav__list">
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#problem">Problem</a></li>
+            <li><a href="#discovery">Discovery</a></li>
+            <li><a href="#approach">Approach</a></li>
+            <li><a href="#findings">Findings</a></li>
+            <li><a href="#outcome">Outcome</a></li>
+          </ul>
+        </nav>
+
+        <article class="page-content">
+
+          <section id="overview" class="proj-overview">
+            <h1 class="proj-overview__title">
+              Improving member–provider matching with AI
+            </h1>
+            <p class="proj-overview__summary">
+              As a student user researcher for Salesforce, I led mixed-methods research into healthcare referral workflows —
+              uncovering where AI could reduce administrative burden without eroding the trust that makes care feel human.
+              Our recommendations shaped how AI gets embedded in contact center tools across the member, provider, and agent journey.
             </p>
+
+            <div class="proj-meta">
+              <div class="proj-meta__item">
+                <span class="proj-meta__label">Role</span>
+                <span class="proj-meta__value">User Researcher</span>
+              </div>
+              <div class="proj-meta__item">
+                <span class="proj-meta__label">Timeline</span>
+                <span class="proj-meta__value">4 months, 2025</span>
+              </div>
+              <div class="proj-meta__item">
+                <span class="proj-meta__label">Team</span>
+                <span class="proj-meta__value">4 UX Researchers</span>
+              </div>
+              <div class="proj-meta__item">
+                <span class="proj-meta__label">Methods</span>
+                <span class="proj-meta__value">Landscape review, survey (n=16), IDIs (n=6), affinity mapping</span>
+              </div>
+              <div class="proj-meta__item">
+                <span class="proj-meta__label">Tools</span>
+                <span class="proj-meta__value">MAXQDA, R, Sheets</span>
+              </div>
+            </div>
+          </section>
+
+          <div class="proj-narrative">
+
+            <section id="problem">
+              <span class="proj-phase__label">Problem</span>
+              <p class="proj-phase__text">
+                When a patient needs a specialist, a referral shouldn't take weeks. But it often does — because the systems
+                meant to connect members, providers, and contact center agents weren't designed to talk to each other.
+                Fragmented records. Manual verification steps. A phone call that starts over every time it transfers.
+              </p>
+              <p class="proj-phase__text">
+                Salesforce wanted to understand where AI could help. Not in a vague, futurist sense — they needed
+                concrete answers about specific workflow moments. The complication: providers were already skeptical.
+                Patients were already confused. And the contact center agents caught in the middle were burning out.
+                
+              </p>
+            </section>
+
+            <section id="discovery">
+              <span class="proj-phase__label">Discovery</span>
+              <p class="proj-phase__text">
+                We started with 20+ sources before talking to anyone — forums where patients vented about referral delays,
+                research on contact center burnout, industry reports on IVR failure rates. The landscape review gave us
+                enough to know what we were walking into before we designed a single survey question.
+              </p>
+              <p class="proj-phase__text">
+                The survey (n=16) let us compare across all three seats at once: member, provider, agent. What looked like
+                an individual frustration in the patient forum turned out to be a systemic breakdown visible from every angle.
+                Then six in-depth provider interviews gave us the specific, frustrated, sometimes resigned way people described their days.
+              </p>
+            </section>
+
+            <section id="approach">
+              <span class="proj-phase__label">Approach</span>
+              <p class="proj-phase__text">
+                I focused my analysis on the provider interviews, which carried the sharpest signal about AI trust.
+                Using MAXQDA to code themes, a pattern emerged that the survey had only gestured at:
+                providers weren't opposed to AI as a concept. They were opposed to what they'd already seen AI do.
+                Specifically — what their patients had experienced, and came back upset about.
+              </p>
+
+              <blockquote class="proj-pullquote">
+                "That's what they call it, like a robot and not a real person. Yeah, and they hate that."
+              </blockquote>
+
+              <p class="proj-phase__text">
+                We built a swimlane diagram mapping where member, provider, and contact center journeys intersect —
+                and more usefully, where they silently fall apart. The swimlane became the spine of our executive presentation
+                because it made the handoff failures visible in a way that a findings deck couldn't.
+              </p>
+
+              <figure class="proj-fig">
+                <img
+                  src="/images/swimlane.svg"
+                  alt="Swimlane diagram mapping the intersections between member, provider, and contact center journeys."
+                />
+                <figcaption>
+                  Swimlane diagram mapping where the three journeys intersect — and where they don't.
+                </figcaption>
+              </figure>
+            </section>
+
+            <section id="findings">
+              <span class="proj-phase__label">Findings</span>
+              <p class="proj-phase__text">
+                Three things shaped our recommendations.
+              </p>
+              <p class="proj-phase__text">
+                <strong>AI trust has a generational dimension.</strong> Older patients came in with prior bad experiences
+                with automated systems — IVRs that misheard them, chatbots that looped. Their distrust wasn't irrational.
+                It was informed. And providers were managing that distrust on top of their own.
+              </p>
+              <p class="proj-phase__text">
+                <strong>Information decays across departments.</strong> Patient context — what they need, what they've already
+                tried, what they're afraid of — erodes at every handoff. By the time it reaches the right person, it's incomplete.
+                This is exactly the kind of invisible, structural problem that AI can address backstage, before the patient
+                ever picks up the phone.
+              </p>
+              <p class="proj-phase__text">
+                <strong>Providers see a ceiling, but it isn't zero.</strong> The most useful thing a provider said
+                wasn't about the technology. It was about the specific type of question that wastes their staff's time.
+              </p>
+
+              <blockquote class="proj-pullquote">
+                "Some of the questions our participants answered… could definitely be answered by AI. Very, very minimal
+                kind of questions like that where it does take time out of staff's day."
+              </blockquote>
+            </section>
+
           </div>
 
-          <h2 class="heading">Summary</h2>
+          <section id="outcome" class="proj-outcome">
+            <span class="proj-outcome__label">Outcome</span>
 
-          <p>
-            Healthcare referrals are often slow, inefficient, and frustrating
-            for members, providers, and contact centers alike. As a contractor
-            for Salesforce, I conducted mixed-methods research to uncover pain
-            points in provider matching and identify where AI could quietly
-            enhance workflows without eroding trust.
-          </p>
-          <p>
-            Our recommendations focused on embedding AI in the background,
-            automating verification, surfacing context for agents, and
-            streamlining provider matching, so that care feels more connected,
-            efficient, and human.
-          </p>
-          <h2 class="heading">Context</h2>
-          <p>
-            Fragmented systems and outdated referral processes increase
-            administrative burden, delay care, and frustrate patients.
-            Salesforce aimed to explore how AI could support contact centers in
-            reducing burnout while improving member satisfaction and provider
-            alignment.
-          </p>
-        </section>
+            <div class="proj-outcome__stats">
+              <div class="proj-outcome__stat">
+                <span class="proj-outcome__number">n=22</span>
+                <span class="proj-outcome__stat-label">Participants across survey + interviews</span>
+              </div>
+              <div class="proj-outcome__stat">
+                <span class="proj-outcome__number">20+</span>
+                <span class="proj-outcome__stat-label">Sources in landscape review</span>
+              </div>
+              <div class="proj-outcome__stat">
+                <span class="proj-outcome__number">NDA</span>
+                <span class="proj-outcome__stat-label">Full findings restricted</span>
+              </div>
+            </div>
 
-        <!-- Team -->
-        <section id="team">
-          <h2 class="heading">Team</h2>
-          <p>4 User Experience Researchers</p>
-        </section>
+            <p class="proj-outcome__text">
+              Our recommendations focused on embedding AI in the background: automating verification,
+              surfacing context for agents, streamlining provider matching — so that care feels more connected, efficient, and human.
+              We presented an executive report and the swimlane deliverable to the Salesforce team.
+              Full findings are restricted under NDA.
+            </p>
 
-        <!-- Process & Data Collection -->
-        <section id="process">
-          <h2 class="heading">Process & Data Collection</h2>
-          <p>Mixed methods project</p>
-          <ul>
-            <li>
-              Landscape Review: Analyzed 20+ sources (forums, blogs, journals)
-              for real user frustrations.
-            </li>
-            <li>
-              Online Survey: n=16 Gathered perspectives from members, providers,
-              and a contact center agent.
-            </li>
-            <li>
-              Interviews: n=6 Uncovered emotional stories across members,
-              providers, and contact center workers.
-            </li>
-            <li>
-              Affinity Mapping: Visualized pain points and opportunity clusters
-              across the care journey.
-            </li>
-          </ul>
-        </section>
+            <p class="proj-reflection">
+              The people most open to AI weren't the youngest ones in the room.
+              They were the ones most exhausted by repetition.
+            </p>
+          </section>
 
-        <!-- Analyzing the Data -->
-        <section id="analysis">
-          <h2 class="heading">Analyzing the Data</h2>
-          <p>
-            I used Sheets and R to analyze the survey results. I used MAXQDA to
-            extract themes, notably from the Provider side of the interviews.
-          </p>
-        </section>
-
-        <!-- Presentation -->
-        <section id="presentation">
-          <h2 class="heading">Presentation</h2>
-          <p>
-            We created a swimlane for mapping intersections between members,
-            providers, and contact centers presented a executive presentation.
-            and alternative presentation method, the BART Clipper cards
-            redesigned to create a community atmosphere around transport.
-          </p>
-
-          <figure class="essay__fig">
-            <img
-              class="essay__img"
-              src="/images/swimlane.svg"
-              alt="Swimlane diagram."
-            />
-            <figcaption class="essay__img-caption">
-              Swimlane diagram.
-            </figcaption>
-          </figure>
-        </section>
-
-        <h3>Executive Report: Findings</h3>
-        <p class="nda"> Full findings are restricted under an NDA. </p>
-
-        <p> The following results come from the Provider interviews alone. We found that providers would likely be willing to adopt AI in the backend
-            processes, but that forward facing implementations could be seen as abrasive.
-        </p>
-        <p class="quote">
-          "I don't see that as a realistic solution because I've had patients
-          call before and complain that when they call other offices, it just
-          goes straight to like a robot.
-
-          <u>That's what they call it, like a robot and not a real person. </u>
-          Yeah, and they hate that.”
-        </p>
-
-        <h2 class="heading">AI trust threshold: Generational differences</h2>
-
-        <p>
-          Current AI implementations like IVRs have created distrust due to
-          inaccuracy.
-        </p>
-
-        <h2 class="heading">Cross-Departmental Message Decay</h2>
-
-        <p>
-          Patient information experiences significant "message decay" when
-          traveling between departments.
-        </p>
-
-        <h2 class="heading">
-          Providers see potential for AI to handle basic patient inquiries
-        </h2>
-
-        <p>
-          “Some of the questions our participants answered... could definitely
-          be answered by AI. Very, very minimal kind of questions like that
-          where it does take time out of staff’s day.”
-        </p>
+        </article>
       </div>
     </div>
+
   </body>
 </html>
