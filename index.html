@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -9,35 +9,37 @@
     <meta name="robots" content="noindex" />
   </head>
   <body>
-
     <nav class="site-nav">
-      
       <ul class="site-nav__links">
-        <li><a href="mailto:mikah@berkeley.edu">Contact</a></li>
+        <!-- <li><a href="mailto:mikah@berkeley.edu">Contact</a></li> -->
       </ul>
     </nav>
 
     <header class="hero">
       <h1 class="hero__headline">
-        Mikah is a UX/product researcher by training and
-        a cybersecurity consultant by necessity.
-        
+        Mikah's website is now on hiatus. Thanks for visiting!
       </h1>
       <p class="hero__body">
-        I'm also an ex-student in social and cognitive psychology! Outside of work I like reading
-        <a href="https://www.goodreads.com/user/show/179266256-mikah">books</a> (fiction, classics, horror),
-        listening to music, identifying dog breeds, staring at birds, eating fruit, knitting, and
-        <a href="/pages/artportfolio.html">making art</a>.
+        I'm an ex-student in social and cognitive psychology! Outside of work I
+        like reading
+        <a href="https://www.goodreads.com/user/show/179266256-mikah">books</a>
+        (fiction, classics, horror), listening to music, identifying dog breeds,
+        staring at birds, eating fruit, knitting, and making art (drawing).
+      </p>
+      <p>
+        Drop a line <a href="mailto:mikah@berkeley.edu">here</a>. This webpage
+        is brought to you with the help of the WWW. Revamped every couple of
+        months. Fonts are Geist and Baskervville.
       </p>
     </header>
-
+    <!-- 
     <main class="projects">
       <span class="projects__heading">Selected projects</span>
 
       <ol class="featured__list" style="list-style:none; padding:0; margin:0;">
 
-        <!-- Salesforce -->
-        <li class="project-row" id="proj-salesforce">
+         Salesforce -->
+    <!-- <li class="project-row" id="proj-salesforce">
           <div class="project-row__thumb">
             <img
               src="images/Salesforce.com_logo.svg.png"
@@ -67,10 +69,10 @@
               </div>
             </div>
           </div>
-        </li>
+        </li> -->
 
-        <!-- BART -->
-        <li class="project-row" id="proj-bart">
+    <!-- BART -->
+    <!-- <li class="project-row" id="proj-bart">
           <div class="project-row__thumb">
             <img
               src="images/art_portfolio/bartcardsredesign.jpg"
@@ -100,10 +102,10 @@
               </div>
             </div>
           </div>
-        </li>
+        </li> -->
 
-        <!-- Thesis -->
-        <li class="project-row" id="proj-thesis">
+    <!-- Thesis -->
+    <!-- <li class="project-row" id="proj-thesis">
           <div class="project-row__thumb">
             <img
               src="images/socdev.png"
@@ -135,9 +137,9 @@
         </li>
 
       </ol>
-    </main>
+    </main> -->
 
-    <section class="all-work">
+    <!-- <section class="all-work">
       <span class="all-work__heading">All work</span>
       <div class="all-work__grid">
 
@@ -160,26 +162,24 @@
         </a>
 
       </div>
-    </section>
+    </section> -->
 
-    <footer class="site-footer">
-      <div class="site-footer__inner">
-        <h2 class="site-footer__headline">
-          Let's work <a href="mailto:mikah@berkeley.edu">together</a>.
+    <!-- <footer class="site-footer"> -->
+    <!-- <div class="site-footer__inner"> -->
+    <!-- <h2 class="site-footer__headline"> -->
+    <!-- Drop a line <a href="mailto:mikah@berkeley.edu">here</a>.
         </h2>
-        <p class="site-footer__body">
-          This webpage is brought to you with the help of the WWW. Revamped every couple of months.
-          Fonts are Geist and Baskervville.
-        </p>
-      </div>
-    </footer>
+        <p class="site-footer__body"> -->
+
+    <!-- </div>
+    </footer> -->
 
     <script>
       // Make entire project row clickable — delegates to the title link
-      document.querySelectorAll(".project-row").forEach(row => {
+      document.querySelectorAll(".project-row").forEach((row) => {
         const link = row.querySelector(".project-row__title");
         if (!link) return;
-        row.addEventListener("click", e => {
+        row.addEventListener("click", (e) => {
           if (e.target.closest("a")) return;
           link.click();
         });
@@ -188,7 +188,8 @@
 
     <script
       data-goatcounter="https://mikah.goatcounter.com/count"
-      async src="//gc.zgo.at/count.js"
+      async
+      src="//gc.zgo.at/count.js"
     ></script>
   </body>
 </html>
